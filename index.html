@@ -18,7 +18,14 @@
         <div class="box-container">
           <div class="header-top__wrap">
             <div class="header-top__city">
-              <a href="#">Симферополь</a>
+              <div class="select select_color">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head">Симферополь</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item"><a href="#">Севастополь</a></li>
+                        <li class="select__item"><a href="#">Бахчисарай</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="header-top__nav">
               <ul>
@@ -35,32 +42,54 @@
 
       <div class="header-bottom">
         <div class="box-container">
-          <div class="header-bottom__logo">
-            <img src="img/icons/logo.svg" alt="">
-            <p></p>
+          <div class="header-bottom__wrap">
+            <div class="header-bottom__logo">
+              <img src="img/icons/logo.svg" alt="">
+              <p>Производство и продажа 
+                кровельных материалов 
+                в Крыму</p>
+            </div>
+    
+            <div class="header-bottom__address">
+              <img src="img/header-map.jpg" alt="">
+              <p><strong>г. Симферополь</strong> <br>
+                ул. Генерала Васильева, 30 з</p>
+            </div>
+    
+            <div class="header-bottom__tel">
+              <div class="select select_color">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head">+7 (978) 702-70-20</div> 
+                  <ul class="select__list" style="display: none;">
+                      <li class="select__item"><a href="#">+7 (978) 702-70-21</a></li>
+                  </ul>
+              </div>
+              <a class="mail_underline" href="#">roof-zavod@gmail.com</a>
+            </div>
+    
+            <a href="#" class="green-btn green-btn_header">Записаться на бесплатный <br> замер-консультацию</a>
           </div>
-
-          <div class="header-bottom__address">
-            <img src="img/header-map.jpg" alt="">
-            <p><strong>г. Симферополь</strong> <br>
-              ул. Генерала Васильева, 30 з</p>
-          </div>
-
-          <div class="header-bottom__tel">
-            <a href="#">+7 (978) 702-70-20</a> <br>
-            <a href="#">roof-zavod@gmail.com</a>
-          </div>
-
-          <a href="#" class="green-btn green-btn_header">Записаться на бесплатный <br> замер-консультацию</a>
-
+          
         </div>
-      </div>     
+      </div>  
+
     </header>
+
     <section class="navigation">
       <div class="box-container">
         <nav class="bg-wrap bg-wrap_modify">
+          <span class="header__button-menu"><i class="fas fa-bars"></i></span>
           <ul>
-            <li><a href="#">Каталог</a></li>
+            <li>
+              <div class="select select_color">
+                <input class="select__input" type="hidden" name="">
+                <div class="select__head">Каталог</div>
+                  <ul class="select__list" style="display: none;">
+                      <li class="select__item"><a href="#">Каталог 1</a></li>
+                      <li class="select__item"><a href="#">Каталог 2</a></li>
+                  </ul>
+              </div>
+            </li>
             <li><a href="#">Прайс-лист</a></li>
             <li><a href="#">Портфолио</a></li>
             <li><a href="#">Доставка и оплата</a></li>
@@ -72,6 +101,79 @@
             <a href="#"><i class="fas fa-search"></i></a>
           </div>
         </nav>
+
+        <div class="header__mobile">
+          <span class="header__mobile-close"><i class="fas fa-times"></i></span>
+          <div class="header__nav_mobile">
+            <ul class="header__nav_item_mobile">
+              <li>
+                <div class="select select_color">
+                  <input class="select__input" type="hidden" name="">
+                  <div class="select__head">Каталог</div>
+                    <ul class="select__list" style="display: none;">
+                        <li class="select__item"><a href="#">Каталог 1</a></li>
+                        <li class="select__item"><a href="#">Каталог 2</a></li>
+                    </ul>
+                </div>
+              </li>
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Статьи и новости </a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="main-header__phones">
+              <a href="#">+7 978 749-05-42</a>
+              <a href="#">+7 978 984-25-69</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main-section">
+      <div class="box-container">
+        <div class="main-section__wrap">
+          <h1 class="main-section__title">Производство и продажа <br>
+            кровельных материалов</h1>
+          <p class="main-section__subtitle">из сырья <span class="bg-color-green">премиум-класса</span> <br>
+            с гарантией до 10 лет</p>
+
+          <ul class="main-section__desc">
+            <li><span>Надежный профиль</span>  для крыши и дома по честным ценам от производителя.</li>
+            <li><span>Фабричная гарантия 10 лет!</span>  Соответствие ГОСТу, привлекательный внешний вид, разнообразная 
+              палитра по выбору цвета.</li>
+          </ul>
+
+          <div class="btn-contaiter">
+            <a href="#" class="red-btn">Записаться на бесплатный <br> замер-консультацию</a>
+            <a href="#" class="green-btn">Записаться на бесплатный <br> замер-консультацию</a>
+          </div>
+
+          <div class="cadr__wrap">
+            <div class="card card__modify">
+              <p class="card__name">Собственное производство</p>
+
+              <p class="card__desc">Собственное производство
+                в Симферополе площадью Х ХХХ м2
+                и объемами ХХХ в год</p>
+            </div>
+
+            <div class="card card__modify">
+              <p class="card__name">Сырьё премиум класса</p>
+
+              <p class="card__desc">Работаем только с качественны
+                стальным прокатом производства ведущих металлургических комбинатов (НЛМК, Северсталь)</p>
+            </div>
+
+            <div class="card card__modify">
+              <p class="card__name">Контроль доставки</p>
+
+              <p class="card__desc">Бесплатно доставим по Симферополю в день заказа , а также в любую точку Крыма при заказе от ХХ ХХХ р</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
     

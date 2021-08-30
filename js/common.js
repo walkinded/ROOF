@@ -1,6 +1,6 @@
 
 /* ==================== scrolled header ==================== */ 
-$('.header_bg-color').addClass('original').clone().insertAfter('header').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+$('.navigation').addClass('original').clone().insertAfter('.navigation').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
 
 scrollIntervalID = setInterval(stickIt);
 
@@ -45,5 +45,39 @@ $(document).ready(function(){
           scrollTop: 0
       }, 400);
       return false;
+  });
+});
+/* ==================== Seleck Btn ==================== */ 
+
+$('.select').on('click', '.select__head', function () {
+  if ($(this).hasClass('open')) {
+      $(this).removeClass('open');
+      $(this).next().fadeOut();
+  } else {
+      $('.select__head').removeClass('open');
+      $('.select__list').fadeOut();
+      $(this).addClass('open');
+      $(this).next().fadeIn();
+  }
+});
+
+$(document).click(function (e) {
+  if (!$(e.target).closest('.select').length) {
+      $('.select__head').removeClass('open');
+      $('.select__list').fadeOut();
+  }
+});
+
+
+/* ==================== mobile menu ==================== */ 
+$(function() {
+  $('.header__button-menu').click(function() {
+    $('body').addClass('overflow-hidden');
+    $('.header__mobile').fadeIn();
+  });
+
+  $('.header__mobile-close').click(function() {
+    $('body').removeClass('overflow-hidden');
+    $('.header__mobile').fadeOut();
   });
 });
