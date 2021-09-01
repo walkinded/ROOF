@@ -1,121 +1,100 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="libs/fancybox-2.1.7/source/jquery.fancybox.css">
-  <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
-  <title>Главная</title>
-</head>
-<body>
-
-  <main>
-    <!--========== header ==========-->
-    <header>
-      <div class="header-top">
-        <div class="box-container">
-          <div class="header-top__wrap">
-            <div class="header-top__city">
-              <div class="select select_color">
-                <input class="select__input" type="hidden" name="">
-                <div class="select__head">Симферополь</div>
-                    <ul class="select__list" style="display: none;">
-                        <li class="select__item"><a href="#">Севастополь</a></li>
-                        <li class="select__item"><a href="#">Бахчисарай</a></li>
-                    </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="libs/fancybox-2.1.7/source/jquery.fancybox.css"
+    />
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <main>
+      <!--========== header ==========-->
+      <header>
+        <div class="header-top">
+          <div class="box-container">
+            <div class="header-top__wrap">
+              <div class="header-top__city">
+                <div class="select select_color">
+                  <input class="select__input" type="hidden" name="" />
+                  <div class="select__head">Симферополь</div>
+                  <ul class="select__list" style="display: none">
+                    <li class="select__item"><a href="#">Севастополь</a></li>
+                    <li class="select__item"><a href="#">Бахчисарай</a></li>
+                  </ul>
                 </div>
-            </div>
-            <div class="header-top__nav">
-              <ul>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Партнерам</a></li>
-                <li><a href="#">Оплата и доставка</a></li>
-                <li><a href="#">Блог </a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
+              </div>
+              <div class="header-top__nav">
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Партнерам</a></li>
+                  <li><a href="#">Оплата и доставка</a></li>
+                  <li><a href="#">Блог </a></li>
+                  <li><a href="#">Контакты</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="header-bottom">
+        <div class="header-bottom">
+          <div class="box-container">
+            <div class="header-bottom__wrap">
+              <div class="header-bottom__logo">
+                <img src="img/icons/logo.svg" alt="" />
+                <p>Производство и продажа кровельных материалов в Крыму</p>
+              </div>
+
+              <div class="header-bottom__address">
+                <img src="img/header-map.jpg" alt="" />
+                <p>
+                  <strong>г. Симферополь</strong> <br />
+                  ул. Генерала Васильева, 30 з
+                </p>
+              </div>
+
+              <div class="header-bottom__tel">
+                <div class="select select_color">
+                  <input class="select__input" type="hidden" name="" />
+                  <div class="select__head">+7 (978) 702-70-20</div>
+                  <ul class="select__list" style="display: none">
+                    <li class="select__item">
+                      <a href="#">+7 (978) 702-70-21</a>
+                    </li>
+                  </ul>
+                </div>
+                <a class="mail_underline" href="#">roof-zavod@gmail.com</a>
+              </div>
+
+              <a href="#" class="green-btn green-btn_header"
+                >Записаться на бесплатный <br />
+                замер-консультацию</a
+              >
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--========== navigation ==========-->
+      <section class="navigation">
         <div class="box-container">
-          <div class="header-bottom__wrap">
-            <div class="header-bottom__logo">
-              <img src="img/icons/logo.svg" alt="">
-              <p>Производство и продажа 
-                кровельных материалов 
-                в Крыму</p>
-            </div>
-    
-            <div class="header-bottom__address">
-              <img src="img/header-map.jpg" alt="">
-              <p><strong>г. Симферополь</strong> <br>
-                ул. Генерала Васильева, 30 з</p>
-            </div>
-    
-            <div class="header-bottom__tel">
-              <div class="select select_color">
-                <input class="select__input" type="hidden" name="">
-                <div class="select__head">+7 (978) 702-70-20</div> 
-                  <ul class="select__list" style="display: none;">
-                      <li class="select__item"><a href="#">+7 (978) 702-70-21</a></li>
-                  </ul>
-              </div>
-              <a class="mail_underline" href="#">roof-zavod@gmail.com</a>
-            </div>
-    
-            <a href="#" class="green-btn green-btn_header">Записаться на бесплатный <br> замер-консультацию</a>
-          </div>
-          
-        </div>
-      </div>  
-
-    </header>
-
-     <!--========== navigation ==========-->
-    <section class="navigation">
-      <div class="box-container">
-        <nav class="bg-wrap bg-wrap_modify">
-          <span class="header__button-menu"><i class="fas fa-bars"></i></span>
-          <ul>
-            <li>
-              <div class="select select_color">
-                <input class="select__input" type="hidden" name="">
-                <div class="select__head">Каталог</div>
-                  <ul class="select__list" style="display: none;">
-                      <li class="select__item"><a href="#">Каталог 1</a></li>
-                      <li class="select__item"><a href="#">Каталог 2</a></li>
-                  </ul>
-              </div>
-            </li>
-            <li><a href="#">Прайс-лист</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Статьи и новости </a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-          <div class="search">
-            <input type="text" placeholder="Поиск">
-            <a href="#"><i class="fas fa-search"></i></a>
-          </div>
-        </nav>
-
-        <div class="header__mobile">
-          <span class="header__mobile-close"><i class="fas fa-times"></i></span>
-          <div class="header__nav_mobile">
-            <ul class="header__nav_item_mobile">
+          <nav class="bg-wrap bg-wrap_modify">
+            <span class="header__button-menu"><i class="fas fa-bars"></i></span>
+            <ul>
               <li>
                 <div class="select select_color">
-                  <input class="select__input" type="hidden" name="">
+                  <input class="select__input" type="hidden" name="" />
                   <div class="select__head">Каталог</div>
-                    <ul class="select__list" style="display: none;">
-                        <li class="select__item"><a href="#">Каталог 1</a></li>
-                        <li class="select__item"><a href="#">Каталог 2</a></li>
-                    </ul>
+                  <ul class="select__list" style="display: none">
+                    <li class="select__item"><a href="#">Каталог 1</a></li>
+                    <li class="select__item"><a href="#">Каталог 2</a></li>
+                  </ul>
                 </div>
               </li>
               <li><a href="#">Прайс-лист</a></li>
@@ -124,383 +103,712 @@
               <li><a href="#">Статьи и новости </a></li>
               <li><a href="#">Контакты</a></li>
             </ul>
-            <div class="main-header__phones">
-              <a href="#">+7 978 749-05-42</a>
-              <a href="#">+7 978 984-25-69</a>
+            <div class="search">
+              <input type="text" placeholder="Поиск" />
+              <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+          </nav>
+
+          <div class="header__mobile">
+            <span class="header__mobile-close"
+              ><i class="fas fa-times"></i
+            ></span>
+            <div class="header__nav_mobile">
+              <ul class="header__nav_item_mobile">
+                <li>
+                  <div class="select select_color">
+                    <input class="select__input" type="hidden" name="" />
+                    <div class="select__head">Каталог</div>
+                    <ul class="select__list" style="display: none">
+                      <li class="select__item"><a href="#">Каталог 1</a></li>
+                      <li class="select__item"><a href="#">Каталог 2</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Статьи и новости </a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <div class="main-header__phones">
+                <a href="#">+7 978 749-05-42</a>
+                <a href="#">+7 978 984-25-69</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!--========== main-section ==========-->
-    <section class="main-section">
-      <div class="box-container">
-        <div class="main-section__wrap">
-          <h1 class="main-section__title">Производство и продажа <br>
-            кровельных материалов</h1>
-          <p class="main-section__subtitle">из сырья <span class="bg-color-green">премиум-класса</span> <br>
-            с гарантией до 10 лет</p>
+      <!--========== main-section ==========-->
+      <section class="main-section">
+        <div class="box-container">
+          <div class="main-section__wrap">
+            <h1 class="main-section__title">
+              Производство и продажа <br />
+              кровельных материалов
+            </h1>
+            <p class="main-section__subtitle">
+              из сырья <span class="bg-color-green">премиум-класса</span> <br />
+              с гарантией до 10 лет
+            </p>
 
-          <ul class="main-section__desc">
-            <li><span>Надежный профиль</span>  для крыши и дома по честным ценам от производителя.</li>
-            <li><span>Фабричная гарантия 10 лет!</span>  Соответствие ГОСТу, привлекательный внешний вид, разнообразная 
-              палитра по выбору цвета.</li>
-          </ul>
+            <ul class="main-section__desc">
+              <li>
+                <span>Надежный профиль</span> для крыши и дома по честным ценам
+                от производителя.
+              </li>
+              <li>
+                <span>Фабричная гарантия 10 лет!</span> Соответствие ГОСТу,
+                привлекательный внешний вид, разнообразная палитра по выбору
+                цвета.
+              </li>
+            </ul>
 
-          <div class="btn-contaiter">
-            <a href="#" class="red-btn">Записаться на бесплатный <br> замер-консультацию</a>
-            <a href="#" class="green-btn">Записаться на бесплатный <br> замер-консультацию</a>
-          </div>
-
-          <div class="cadr__wrap">
-            <div class="card card__modify">
-              <p class="card__name">Собственное производство</p>
-
-              <p class="card__desc">Собственное производство
-                в Симферополе площадью Х ХХХ м2
-                и объемами ХХХ в год</p>
+            <div class="btn-contaiter">
+              <a href="#" class="red-btn"
+                >Записаться на бесплатный <br />
+                замер-консультацию</a
+              >
+              <a href="#" class="green-btn"
+                >Записаться на бесплатный <br />
+                замер-консультацию</a
+              >
             </div>
 
-            <div class="card card__modify">
-              <p class="card__name">Сырьё премиум класса</p>
+            <div class="cadr__wrap">
+              <div class="card card__modify">
+                <p class="card__name">Собственное производство</p>
 
-              <p class="card__desc">Работаем только с качественны
-                стальным прокатом производства ведущих металлургических комбинатов (НЛМК, Северсталь)</p>
-            </div>
+                <p class="card__desc">
+                  Собственное производство в Симферополе площадью Х ХХХ м2 и
+                  объемами ХХХ в год
+                </p>
+              </div>
 
-            <div class="card card__modify">
-              <p class="card__name">Контроль доставки</p>
+              <div class="card card__modify">
+                <p class="card__name">Сырьё премиум класса</p>
 
-              <p class="card__desc">Бесплатно доставим по Симферополю в день заказа , а также в любую точку Крыма при заказе от ХХ ХХХ р</p>
+                <p class="card__desc">
+                  Работаем только с качественны стальным прокатом производства
+                  ведущих металлургических комбинатов (НЛМК, Северсталь)
+                </p>
+              </div>
+
+              <div class="card card__modify">
+                <p class="card__name">Контроль доставки</p>
+
+                <p class="card__desc">
+                  Бесплатно доставим по Симферополю в день заказа , а также в
+                  любую точку Крыма при заказе от ХХ ХХХ р
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        
-      </div>
-    </section>
+      </section>
 
-    <!--========== catalog ==========-->
-    <section class="catalog">
-      <div class="box-container">
-        <p class="catalog__title">Каталог строительных материалов</p>
-        <p class="catalog__subtitle">Предлагаем более 1 000 товаров из отечественного металла премиум класса с доставкой по всей Республике Крым. Подберем оптимальное решение для любого бюджета</p>
+      <!--========== catalog ==========-->
+      <section class="catalog">
+        <div class="box-container">
+          <p class="title">Каталог строительных материалов</p>
+          <p class="subtitle">
+            Предлагаем более 1 000 товаров из отечественного металла премиум
+            класса с доставкой по всей Республике Крым. Подберем оптимальное
+            решение для любого бюджета
+          </p>
 
-        <div class="catalog__wrap"> 
-          <div class="card">
-            <p class="card__name card__name_catalog">Кровля</p>
+          <div class="catalog__wrap">
+            <div class="card">
+              <p class="card__name card__name_catalog">Кровля</p>
 
-            <ul class="card__desc">
-              <li>Металлочерепица</li>
-              <li>Композитная черепица</li>
-              <li>Фальцевая кровля</li>
-              <li>Гибкая черепица</li>
-            </ul>
-          </div>
+              <ul class="card__desc">
+                <li>Металлочерепица</li>
+                <li>Композитная черепица</li>
+                <li>Фальцевая кровля</li>
+                <li>Гибкая черепица</li>
+              </ul>
+            </div>
 
-          <div class="card">
-            <p class="card__name card__name_catalog">Профнастил</p>
+            <div class="card">
+              <p class="card__name card__name_catalog">Профнастил</p>
 
-            <ul class="card__desc">
-              <li>Металлические системы</li>
-              <li>Пластиковые системы</li>
-              <li>Аксессуары для водостока</li>
-              <li>Дренажные системы</li>
-            </ul>
-          </div>
+              <ul class="card__desc">
+                <li>Металлические системы</li>
+                <li>Пластиковые системы</li>
+                <li>Аксессуары для водостока</li>
+                <li>Дренажные системы</li>
+              </ul>
+            </div>
 
-          <div class="card">
-            <p class="card__name card__name_catalog">Водосток</p>
+            <div class="card">
+              <p class="card__name card__name_catalog">Водосток</p>
 
-            <ul class="card__desc">
-              <li>Металлические системы</li>
-              <li>Пластиковые системы</li>
-              <li>Аксессуары для водостока</li>
-              <li>Дренажные системы</li>
-            </ul>
-          </div>
+              <ul class="card__desc">
+                <li>Металлические системы</li>
+                <li>Пластиковые системы</li>
+                <li>Аксессуары для водостока</li>
+                <li>Дренажные системы</li>
+              </ul>
+            </div>
 
-          <div class="card">
-            <p class="card__name card__name_catalog">Мягкая кровля</p>
+            <div class="card">
+              <p class="card__name card__name_catalog">Мягкая кровля</p>
 
-            <ul class="card__desc">
-              <li>Ворота и заборы</li>
-              <li>Металлические навесы</li>
-              <li>Решётки и перила</li>
-            </ul>
-          </div>
+              <ul class="card__desc">
+                <li>Ворота и заборы</li>
+                <li>Металлические навесы</li>
+                <li>Решётки и перила</li>
+              </ul>
+            </div>
 
-          <div class="card">
-            <p class="card__name card__name_catalog">Фасад</p>
+            <div class="card">
+              <p class="card__name card__name_catalog">Фасад</p>
 
-            <ul class="card__desc">
-              <li>Сайдинг</li>
-              <li>Стеновой профнастил</li>
-              <li>Фасадные панели</li>
-            </ul>
-          </div>
+              <ul class="card__desc">
+                <li>Сайдинг</li>
+                <li>Стеновой профнастил</li>
+                <li>Фасадные панели</li>
+              </ul>
+            </div>
 
-          <div class="card">
-            <p class="card__name card__name_catalog">Утепление</p>
+            <div class="card">
+              <p class="card__name card__name_catalog">Утепление</p>
 
-            <ul class="card__desc">
-              <li>Утеплитель для кровли</li>
-              <li>Утеплитель для фасада</li>
-              <li>Герметики</li>
-            </ul>
+              <ul class="card__desc">
+                <li>Утеплитель для кровли</li>
+                <li>Утеплитель для фасада</li>
+                <li>Герметики</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="catalog-down-line">
-        <?xml version="1.0" encoding="utf-8"?>
-        <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 1826.3 91.7" style="enable-background:new 0 0 1826.3 91.7;" xml:space="preserve">
+        <div class="catalog-down-line">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1826.3 91.7"
+            style="enable-background: new 0 0 1826.3 91.7"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: #f6f9fc;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M1826.3,0v91.7H1625c-37.8,0.6-35.2-27.4-60.3-27.4c-434.4,0-868.8,0-1303.3,0c-25.1,0-22.5,27.9-60.3,27.4H0
+              V0C608.8,0,1217.5,0,1826.3,0L1826.3,0z"
+              />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <!--========== top-seller-tabs ==========-->
+      <section class="top-seller-tabs">
+        <div class="box-container">
+          <div class="top-seller-tabs__wrap">
+            <ul class="tabs bg-wrap">
+              <li><a href="#tab1">Хит продаж</a></li>
+              <li><a href="#tab2">Акции</a></li>
+              <li><a href="#tab3">Новинки</a></li>
+            </ul>
+            <div class="tab_container">
+              <div id="tab1" class="tab_content">
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict1.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict2.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict3.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict4.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="tab2" class="tab_content">
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict1.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict2.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict3.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict4.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="tab3" class="tab_content">
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict1.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict2.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict3.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="product__card">
+                  <a href="#">
+                    <img src="img/catalog/prodict4.jpg" alt="" />
+                  </a>
+
+                  <div class="product__card-wrap">
+                    <span class="item-number">Артикул: 12345</span>
+                    <a class="product__name" href="#"
+                      >Металлочерепица модульная квинта Uno Grand Line</a
+                    >
+
+                    <div class="product__price-box">
+                      <span>7 100 ₽</span>
+                      <a href="#" class="product__btn">Заказать</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========== form-section ==========-->
+      <section class="form-section">
+        <div class="box-container">
+          <p class="main-section__title">
+            Заполните форму и получите <br />
+            <span class="bg-color-green">топ-10 советов</span> по укладке кровли
+          </p>
+
+          <p class="form-section__desc">
+            Мы проверим, всё ли правильно сделано в проекте, всё ли учтено,
+            проверим смету <br />
+            и предложим цены на 20% ниже, благодаря собственному производству
+          </p>
+
+          <img src="img/form-section-img.png" alt="" />
+
+          <div class="forma" id="">
+            <div class="modal-wrap">
+              <div class="block-form">
+                <div class="block-form__title">
+                  <strong>Заполните форму,</strong> и получите топ-10 советов
+                  <br />
+                  по укладке кровли на почту через 5 секунд
+                </div>
+                <!-- <div class="block-form__subtitle">
+                  Заполните форму и наш специалист свяжется с Вами в течение 15
+                  минут
+                </div> -->
+                <form>
+                  <!-- <div class="item-input">
+                    <input type="text" placeholder="Имя" required="required" />
+                  </div> -->
+                  <div class="forma__wrap">
+                    <div class="item-input">
+                      <p>Введите свой номер телефона</p>
+                      <input
+                        type="tel"
+                        placeholder="+7 (___) ___-__-__"
+                        class="input-phone"
+                        required="required"
+                      />
+                    </div>
+                    <button class="btn-2 red-btn" type="submit">
+                      Обсудить проект
+                    </button>
+                  </div>
+
+                  <div class="checkbox-wrap">
+                    <div class="checkbox">
+                      <label>
+                        <input
+                          type="checkbox"
+                          required="required"
+                          checked="checked"
+                        />
+                        <span>Согласие на обработку персональных данных</span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========== why-us ==========-->
+      <section class="why-us">
+        <div class="box-container">
+          <p class="title">Каталог строительных материалов</p>
+          <p class="subtitle">
+            С Вами лично будет работать специалист с более чем 15 летним опытом
+            работы в сфере финансовой аналитики и бизнес планирования
+          </p>
+
+          <img src="img/why-us-img.png" alt="" />
+          <div class="why-us__wrap">
+            <div class="card card_green-border">
+              <p class="card__name card__name_why-us">
+                Устойчивость к перепадам температур
+              </p>
+
+              <p class="card__desc card__desc_why-us">
+                Мы строим надежные дома, которые долго прослужат вам с
+                минимальными затратами на эксплуатацию...
+              </p>
+            </div>
+
+            <div class="card card_green-border">
+              <p class="card__name card__name_why-us">
+                Экологическая безопасность
+              </p>
+
+              <p class="card__desc card__desc_why-us">
+                Большинство наших заказчиков выбирают загородную жизнь ради
+                того, чтобы быть более здоровыми...
+              </p>
+            </div>
+
+            <div class="card card_green-border">
+              <p class="card__name card__name_why-us">
+                Неприхотливость <br />
+                в эксплуатации
+              </p>
+
+              <p class="card__desc card__desc_why-us">
+                Мы строим надежные дома, которые долго прослужат вам с
+                минимальными затратами на эксплуатацию...
+              </p>
+            </div>
+
+            <div class="card card_green-border">
+              <p class="card__name card__name_why-us">
+                Эстетичный <br />
+                внешний вид
+              </p>
+
+              <p class="card__desc card__desc_why-us">
+                Дом должен быть энергоэффективным! Сегодня газ стоит недорого,
+                но кто знает, сколько он будет стоить в будущем...
+              </p>
+            </div>
+
+            <div class="card card_green-border">
+              <p class="card__name card__name_why-us">
+                Простой быстрый <br />
+                монтаж
+              </p>
+
+              <p class="card__desc card__desc_why-us">
+                Важно, чтобы дом был безопасным во всех смыслах этого слова.
+                Лестницы безопасны для детей и старшего...
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--========== portfolio ==========-->
+      <section class="portfolio">
+        <div class="box-container">
+          <p class="title">За <span class="text-red">7 лет работы</span>  мы спроектировали 
+            более 350-ти объектов по всему Крыму</p>
+          <p class="subtitle">
+            Цех укомплектован современным металлообрабатывающем и сварочным оборудованием, что позволяет осуществлять не только полный цикл производства, но и предоставлять продукцию премиального качества
+          </p>
+
+          <div class="portfolio__wrap">
+            <div class="portfolio__box">
+              <img src="img/portfolio-img.jpg" alt="">
+              <div class="portfolio__box-text">
+                <p class="box-text__title">Складской комплекс</p>
+                <div class="box-text__adderss">
+                  <img src="img/icons/placeholder.svg" alt="">
+                  <p>г. Севастополь, ул. Правды, 28</p>
+                </div>
+
+                <div class="box-text__desc">
+                  <p class="box-text__desc-title">С какой задачей обратился клиент:</p>
+                  <p>К нам обратилась компания, которой было необходимо построить небольшое производственное здания для сборки, упаковки и фасовки выпускаемой продукции</p>
+                </div>
+
+                <div class="box-text__desc">
+                  <p class="box-text__desc-title">С какой задачей обратился клиент:</p>
+                  <p>К нам обратилась компания, которой было необходимо построить небольшое производственное здания для сборки, упаковки и фасовки выпускаемой продукции</p>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="green-btn">
+              Смотреть больше работ
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer_line-up">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 1826.3 91.7" style="enable-background:new 0 0 1826.3 91.7;" xml:space="preserve">
           <style type="text/css">
-            .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#e5edf4;}
+            .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#f6f9fc;}
           </style>
           <g>
-            <path class="st0" d="M1826.3,0v91.7H1625c-37.8,0.6-35.2-27.4-60.3-27.4c-434.4,0-868.8,0-1303.3,0c-25.1,0-22.5,27.9-60.3,27.4H0
-              V0C608.8,0,1217.5,0,1826.3,0L1826.3,0z"/>
+            <path class="st0" d="M1826.3,91.7V0H1625c-37.8-0.6-35.2,27.4-60.3,27.4c-434.4,0-868.8,0-1303.3,0C236.4,27.4,239-0.6,201.3,0H0
+              v91.7C608.8,91.7,1217.5,91.7,1826.3,91.7L1826.3,91.7z"/>
           </g>
-        </svg>
-      </div>
-    </section>
+          </svg>
+        </div>
 
-    <section class="top-seller-tabs">
-
-      <div class=" box-container">
-        <div class="top-seller-tabs__wrap">
-          <ul class="tabs bg-wrap">
-            <li><a href="#tab1">Хит продаж</a></li>
-            <li><a href="#tab2">Акции</a></li>
-            <li><a href="#tab3">Новинки</a></li>
-          </ul>
-          <div class="tab_container">
-            <div id="tab1" class="tab_content">
-    
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict1.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict2.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict3.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict4.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
+        <div class="box-container">
+          <div class="footer__wrap">
+            <div class="footer__logo">
+              <img src="img/icons/logo.svg" alt="" />
+              <p>Производство и продажа 
+                кровельных материалов 
+                в Крыму</p>
             </div>
 
-            <div id="tab2" class="tab_content">
-    
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict1.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict2.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict3.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict4.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
-            
-            <div id="tab3" class="tab_content">
-    
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict1.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict2.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict3.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="product__card">
-                <a href="#">
-                  <img src="img/catalog/prodict4.jpg" alt="">
-                </a>
-                
-                <div class="product__card-wrap">
-                  <span class="item-number">Артикул: 12345</span>
-                  <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
-      
-                  <div class="product__price-box">
-                    <span>7 100 ₽</span>
-                    <a href="#" class="product__btn">Заказать</a>
-                  </div>
-                </div>
-              </div>
-  
-            </div>
+            <ul class="footer__item">
+              <li class="font_bold">КАТАЛОГ</li>
+              <li><a href="#">Металлочерепица</a></li>
+              <li><a href="#">Профнастил</a></li>
+              <li><a href="#">Фальцевая кровля</a></li>
+              <li><a href="#">Композитная черепица</a></li>
+              <li><a href="#">Гибкая черепица</a></li>
+              <li><a href="#">Рулонные кровельные материалы</a></li>
+              <li><a href="#">Натуральная черепица</a></li>
+            </ul>
+
+            <ul class="footer__item font_bold">
+              <li><a href="#">О КОМПАНИИ</a></li>
+              <li><a href="#">СТАТЬИ И НОВОСТИ</a></li>
+              <li><a href="#">ПОРТФОЛИО</a></li>
+            </ul>
+
+            <ul class="footer__item footer__item_contacts">
+              <li class="font_bold">КОНТАКТЫ</li>
+              <li>
+                <p class="font_sb">Адрес:</p>
+                  АР Крым, Симферополь <br>
+                  ул. Генерала Васильева, 30 з
+              </li>
+              <li>
+                <p class="font_sb">Телефон:</p>
+                <a href="#">+7 (978) 702-70-20</a>
+              </li>
+              <li>
+                <p class="font_sb">E-mail:</p>
+                <a href="#">roof-zavod@gmail.com</a>
+              </li>
+            </ul>
           </div>
         </div>
-        
-      </div>
 
-      
-    </section>
-    
+        <div class="footer__bottom">
+          <ul>
+            <li><a href="#">Политика конфиденциальности</a></li>
+            <li><p>г. Симферополь © Copyright  2021 г.</p></li>
+            <li>
+              <a href="#">
+                Сделано в 
+                <img src="" alt="">
+              </a>
+            </li>
+          </ul>
+          
+        </div>
+      </footer>
+    </main>
 
-    <footer></footer>
-  </main>
+    <div class="to-up"></div>
 
-
-  <div class="to-up">
-
-  </div>
-  
-  <script src="libs/jquery-3.5.1/dist/jquery.min.js"></script>
-  <script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
-  <script src="libs/maskedinput/jquery.maskedinput.js"></script>
-  <script src="js/common.js"></script>
-</body>
+    <script src="libs/jquery-3.5.1/dist/jquery.min.js"></script>
+    <script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
+    <script src="libs/maskedinput/jquery.maskedinput.js"></script>
+    <script src="js/common.js"></script>
+  </body>
 </html>

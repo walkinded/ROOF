@@ -28,7 +28,7 @@ function stickIt() {
 }
 
 /* ==================== libs ==================== */ 
-$("input[type=tel]").mask("+7(999)999-99-99");
+$("input[type=tel]").mask("+7 (999)999-99-99");
 $(".fancybox").fancybox();
 
 /* ==================== to up scroller ==================== */ 
