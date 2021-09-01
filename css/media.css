@@ -2,6 +2,9 @@
   .why-us img  {
     right: 0px;
   }
+  .form-section__up-line {
+    top: -50px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -72,6 +75,9 @@
   }
   .footer__bottom ul li {
     margin: 5px 0;
+  }
+  .form-section__up-line {
+    top: -10px;
   }
 }
 
@@ -168,6 +174,7 @@
   }
   .form-section .forma {
     position: relative;
+    right: 0px;
   }
   .portfolio__box {
     height: max-content;
@@ -188,7 +195,8 @@
     width: auto;
     display: flex;
     flex-direction: column;
-}
+  }
+
 }
 
 @media screen and (max-width: 650px) {

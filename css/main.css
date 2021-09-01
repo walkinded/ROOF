@@ -885,12 +885,24 @@ footer a {
 .form-section {
   position: relative;
   background: var(--bg-color-lighter-blue);
-  height: 720px;
+  height: 770px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
-.form-section::before {
+.form-section__up-line {
+  position: absolute;
+  top: -70px;
+  width: 100%;
+}
+
+.form-section__down-line {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+}
+
+/* .form-section::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -898,9 +910,9 @@ footer a {
   height: 100%;
   top: -50px;
   background: url('../img/icons/line-up.svg') no-repeat center top / cover;
-}
+} */
 
-.form-section::after{
+/* .form-section::after{
   position: absolute;
   content: "";
   width: 100%;
@@ -908,7 +920,7 @@ footer a {
   height: 100%;
   bottom: -100px;
   background: url('../img/icons/line-down.svg') no-repeat center top / cover;
-}
+} */
 
 .form-section__desc {
   font-size: 18px;
