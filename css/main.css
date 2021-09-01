@@ -315,14 +315,6 @@ footer a {
   max-width: 215px;
 }
 
-.footer__item {
-  /* font-size: 14px; */
-}
-
-.footer__item ul {
-  
-}
-
 .footer__item li {
   margin-bottom: 25px;
 }
@@ -346,6 +338,17 @@ footer a {
 .footer__bottom ul li {
   margin-right: 60px;
   opacity: .6;
+}
+
+.made-in {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+.made-in img {
+  max-width: 70px;
+  margin-left: 20px;
 }
 
 
