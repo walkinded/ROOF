@@ -207,7 +207,7 @@ header {
 .select__head::after {
   width: 10px;
   height: 6px;
-  background: var(--main-red-color) url("../img/icons/arr-down.svg") no-repeat center / cover;
+  background: url("../img/icons/arr-down-new.svg") no-repeat center / cover;
   position: absolute;
   right: -20px;
   bottom: 50%;
