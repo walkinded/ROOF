@@ -1226,3 +1226,26 @@ z-index: 2;
 .box-text__desc p {
   font-size: 14px;
 }
+
+/* ========== TO-UP ========== */
+.to-up {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80px;
+  z-index: 2;
+  height: 100%;
+  background: var(--bg-color-ligft-blue);
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .3;
+  transition: all .5s;
+}
+
+.to-up:hover {
+  opacity: 1;
+}
