@@ -298,6 +298,7 @@ footer a {
 .footer__wrap {
   display: flex;
   justify-content:space-between;
+  padding-bottom: 20px;
 }
 
 .font_bold {
@@ -313,6 +314,7 @@ footer a {
 }
 .footer__logo p {
   max-width: 215px;
+  font-size: 13px;
 }
 
 .footer__item li {
@@ -618,6 +620,7 @@ footer a {
   border: 1px dashed var(--text-color-gary);
   border-radius: 8px;
   padding: 25px 22px;
+  transition: all .5s;
 }
 
 .card::before {
@@ -642,6 +645,11 @@ footer a {
   top: 20px;
   left: 0;
   background: var(--main-red-color);
+  transition: all .5s;
+}
+
+.card:hover::after{
+  height: 50px;
 }
 
 .card__modify {
