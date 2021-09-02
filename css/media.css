@@ -207,8 +207,8 @@
     flex-direction: column;
   }
   .to-up {
-    width: 49px;
-    height: 49px;
+    width: 39px;
+    height: 39px;
     border: 1px solid;
     border-radius: 8px;
     top: auto;
