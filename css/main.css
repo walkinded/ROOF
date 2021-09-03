@@ -1400,6 +1400,13 @@ z-index: 2;
   line-height: 25px;
 }
 
+.btn-requisites {
+  font-size: 16px;
+  font-weight: var(--font-Semi-bold) !important;
+  color: var(--main-red-color);
+  text-decoration: underline;
+}
+
 .contacts__map {
   max-width: 650px;
   width: 100%;
