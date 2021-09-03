@@ -35,7 +35,9 @@
 }
 
 @media screen and (max-width: 1366px) {
-  
+  .header-nav-union svg {
+    top: -30px;
+  }
 }
 
 @media screen and (max-width: 1280px) {
@@ -88,6 +90,20 @@
   }
   .form-section__up-line {
     top: -10px;
+  }
+  .main-contact__wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .contacts__map {
+    order: 3;
+    grid-column: auto / span 2;
+
+    max-width: 100%;
+  }
+  .header-nav-union svg {
+    top: 0px;
   }
 }
 
@@ -215,6 +231,24 @@
     bottom: 10px;
     left: 10px;
   }
+
+  .main-contact {
+    padding: 30px 0 50px;
+  }
+  .main-contact__wrap {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+  .main-contact__wrap-item {
+    order: 1;
+  }
+  .contacts__map {
+    grid-column: inherit;
+    height: 200px;
+  }
+  .forma {
+    order: 2;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -262,7 +296,7 @@
   .form-section {
     height: max-content;
   }
-  .modal-wrap {
+  .form-section .modal-wrap {
     padding: 30px;
   }
   .form-section .forma input[type=tel]{
@@ -304,4 +338,20 @@
   .tabs li {
     margin: 10px 0px;
   }
+}
+
+@media screen and (max-width: 375px) {
+  .modal-wrap {
+    padding: 30px;
+  }
+  .forma textarea {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .forma textarea {
+    max-width: 167px;
+  }
+  
 }
