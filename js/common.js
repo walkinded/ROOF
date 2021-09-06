@@ -49,7 +49,7 @@ $(document).ready(function(){
 });
 /* ==================== Seleck Btn ==================== */ 
 
-$('.select').on('click', '.select__head', function () {
+$('.select').on('mouseover', '.select__head', function () {
   if ($(this).hasClass('open')) {
       $(this).removeClass('open');
       $(this).next().fadeOut();
@@ -97,4 +97,26 @@ $(document).ready(function($) {
 
     $(selectTab).fadeIn();
   });
+});
+
+/* ==================== accordeon ==================== */
+
+$(document).ready(function() {
+  $('#accordion .accordion__wrap .accordion__head').on('click', function(){
+    $(this).closest('#accordion').find('.accordion__body').not($(this).next()).slideUp(500);
+    $(this).closest('#accordion').find('.accordion__head i').not($(this).find('i')).removeClass('rotate');
+    $(this).siblings('.accordion__body').slideToggle(500);
+    $(this).find('i').toggleClass('rotate');
+  });
+
+  $('.catalog__nav #accordion .accordion__wrap .accordion__head').on('click',function() {
+    $(this).closest('#accordion').find('.accordion__head').not($(this)).removeClass('accordion__head_active');
+    $(this).toggleClass('accordion__head_active');
+  });
+});
+
+
+$('.catalog__nav_mobile').on('click', function(){
+  $(this).siblings('.item__accordion').slideToggle(500);
+  $(this).find('i').toggleClass('rotate');
 });
