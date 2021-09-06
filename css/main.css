@@ -1359,19 +1359,25 @@ z-index: 2;
   width: 80px;
   z-index: 2;
   height: 100%;
-  background: var(--bg-color-ligft-blue);
+  background: rgba(229, 237, 244, .3);
 
   cursor: pointer;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: .3;
+  /* opacity: .3; */
   transition: all .5s;
 }
 
+#scroller {
+  display: none;
+}
+
 .to-up:hover {
-  opacity: 1;
+  /* opacity: 1; */
+  background: rgba(229, 237, 244, 1);
+
 }
 
 

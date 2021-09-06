@@ -34,8 +34,9 @@ $(".fancybox").fancybox();
 /* ==================== to up scroller ==================== */ 
 $(document).ready(function(){   
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 0) {
+      if ($(this).scrollTop() > 500) {
           $('#scroller').fadeIn();
+          $('#scroller').css({'display': 'flex'})
       } else {
           $('#scroller').fadeOut();
       }
@@ -99,8 +100,8 @@ $(document).ready(function($) {
   });
 });
 
-/* ==================== accordeon ==================== */
 
+/* ==================== accordeon ==================== */
 $(document).ready(function() {
   $('#accordion .accordion__wrap .accordion__head').on('click', function(){
     $(this).closest('#accordion').find('.accordion__body').not($(this).next()).slideUp(500);
