@@ -28,13 +28,13 @@ function stickIt() {
 }
 
 /* ==================== libs ==================== */ 
-$("input[type=tel]").mask("+7 (999)999-99-99");
+$("input[type=tel]").mask("+7 (999) 999-99-99");
 $(".fancybox").fancybox();
 
 /* ==================== to up scroller ==================== */ 
 $(document).ready(function(){   
   $(window).scroll(function () {
-      if ($(this).scrollTop() > 500) {
+      if ($(this).scrollTop() > 100) {
           $('#scroller').fadeIn();
           $('#scroller').css({'display': 'flex'})
       } else {
@@ -100,6 +100,28 @@ $(document).ready(function($) {
   });
 });
 
+$(document).ready(function($) {
+  $('.select-roof').hide();
+  $('.select-roof:first').show();
+  $('.roofs-tabs__wrap li:first').addClass('main-calc_bg-active');
+  $('.roofs-tabs__wrap li').click(function(event) {
+    event.preventDefault();
+    $('.roofs-tabs__wrap li').removeClass('main-calc_bg-active');
+    $(this).addClass('main-calc_bg-active');
+    $('.select-roof').hide();
+
+    var selectTab = $(this).find('a').attr("href");
+
+    $(selectTab).fadeIn();
+  });
+});
+
+
+$('.select-material__wrap .select-material__btn:first').addClass('main-calc_bg-active');
+$('.select-material__wrap .select-material__btn').click(function() {
+  $('.select-material__btn').removeClass('main-calc_bg-active');
+  $(this).addClass('main-calc_bg-active');
+});
 
 /* ==================== accordeon ==================== */
 $(document).ready(function() {
@@ -121,3 +143,34 @@ $('.catalog__nav_mobile').on('click', function(){
   $(this).siblings('.item__accordion').slideToggle(500);
   $(this).find('i').toggleClass('rotate');
 });
+
+
+/* ==================== REGULAR ==================== */
+$('.form-control').keyup(function(){
+  var Value = $(this).val();
+  // $(this).siblings('.form-row__title').addClass('form-row__title-active')
+
+  
+  if(Value === '0') {
+    $(this).siblings('.error-msg').css({'display':'block'})
+  } else {
+    $(this).siblings('.error-msg').css({'display':'none'})
+  }
+
+  if(Value.length == '') {
+    $(this).siblings('.form-row__title').removeClass('form-row__title-active');
+  } else {
+    $(this).siblings('.form-row__title').addClass('form-row__title-active')
+  }
+})
+
+$('.form-control').on('focus',function(){
+  $(this).siblings('.form-row__title').addClass('form-row__title-active')
+})
+
+// $(document).on('click', function(e) {
+//   if (!$(e.target).closest(".form-control").length) {
+   
+//   }
+//   e.stopPropagation();
+// });

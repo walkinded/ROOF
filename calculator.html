@@ -194,7 +194,310 @@
 
       <section class="main-calc">
         <div class="box-container">
-          
+          <h1 class="title">Калькулятор расчета кровли</h1>
+
+          <div class="main-calc__body">
+
+            <div class="roofs-tabs">
+              <p class="bg-wrap">
+                <span class="text-red">1</span>
+                Выберите тип кровли
+              </p>
+
+              <ul class="roofs-tabs__wrap">
+
+                <li class="roofs-tabs__item main-calc_bg">
+                  <a href="#roof-1" >
+                    <img src="img/calc/tab-roof1.png" alt="Односкатная">
+                    <p>Односкатная</p>
+                  </a>
+                </li>
+                
+                <li class="roofs-tabs__item main-calc_bg">
+                  <a href="#roof-2" >
+                    <img src="img/calc/tab-roof2.png" alt="Двускатная">
+                    <p>Двускатная</p>
+                  </a>
+                </li>
+
+                <li class="roofs-tabs__item main-calc_bg">
+                  <a href="#roof-3" >
+                    <img src="img/calc/tab-roof3.png" alt="Вальмовая">
+                    <p>Вальмовая</p>
+                  </a>
+                </li>
+                
+                <li class="roofs-tabs__item main-calc_bg">
+                  <a href="#roof-4" >
+                    <img src="img/calc/tab-roof4.png" alt="Шатровая">
+                    <p>Шатровая</p>
+                  </a>
+                </li>
+                
+                <li class="roofs-tabs__item main-calc_bg">
+                  <a href="#roof-5" >
+                    <img src="img/calc/tab-roof5.png" alt="Мансардная">
+                    <p>Мансардная</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="select-material">
+              <p class="bg-wrap">
+                <span class="text-red">2</span>
+                Выберите материал кровли
+              </p>
+              <div class="select-material__wrap">
+                <button class="select-material__btn main-calc_bg">Металлочерепица</button>
+                <button class="select-material__btn main-calc_bg">Профнастил</button>
+              </div>
+            </div>
+
+            <div class="roof-dimensions">
+              <p class="bg-wrap">
+                <span class="text-red">3</span>
+                Укажите размеры вашей кровли
+              </p>
+
+              <div id="roof-1" class="select-roof">
+                <div class="select-section">
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Ширина ската, м</label>
+                    <span class="form-row__icon">W</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Высота ската, м</label>
+                    <span class="form-row__icon">H</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <a href="#" class="product__btn">Сделать расчет</a>
+                </div>
+
+                <div class="roof-img-section">
+                  <img src="img/calc/main-roof.png" alt="">
+                </div>
+              </div>
+
+              <div id="roof-2" class="select-roof">
+                <div class="select-section">
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Ширина ската, м</label>
+                    <span class="form-row__icon">W</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Высота ската 1, м</label>
+                    <span class="form-row__icon">H1</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Высота ската 2, м</label>
+                    <span class="form-row__icon">H2</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <a href="#" class="product__btn">Сделать расчет</a>
+                </div>
+
+                <div class="roof-img-section">
+                  <img src="img/calc/main-roof.png" alt="">
+                </div>
+              </div>
+
+              <div id="roof-3" class="select-roof">
+                <div class="select-section">
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Ширина ската 1, м</label>
+                    <span class="form-row__icon">W1</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Ширина ската 2, м</label>
+                    <span class="form-row__icon">W2</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Ширина конька, м</label>
+                    <span class="form-row__icon">W3</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Высота ската 1, м</label>
+                    <span class="form-row__icon">H1</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Высота ската 2, м</label>
+                    <span class="form-row__icon">H2</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <a href="#" class="product__btn">Сделать расчет</a>
+                </div>
+
+                <div class="roof-img-section">
+                  <img src="img/calc/main-roof.png" alt="">
+                </div>
+              </div>
+
+              <div id="roof-4" class="select-roof">
+                <div class="select-section">
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Ширина ската 1, м</label>
+                    <span class="form-row__icon">W1</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Ширина ската 2, м</label>
+                    <span class="form-row__icon">W2</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Длина ската 1, м</label>
+                    <span class="form-row__icon">H1</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Длина ската 2, м</label>
+                    <span class="form-row__icon">H2</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <a href="#" class="product__btn">Сделать расчет</a>
+                </div>
+
+                <div class="roof-img-section">
+                  <img src="img/calc/main-roof.png" alt="">
+                </div>
+              </div>
+
+              <div id="roof-5" class="select-roof">
+                <div class="select-section">
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Ширина ската, м</label>
+                    <span class="form-row__icon">W</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Длина ската 1,4, м</label>
+                    <span class="form-row__icon">H1</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <div class="form-row">
+                    <input type="text" class="form-control" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+                    <label class="form-row__title">Длина ската 2,3, м</label>
+                    <span class="form-row__icon">H2</span>
+                    <span class="error-msg">Поле не может быть пустым и равным 0</span>
+                  </div>
+
+                  <a href="#" class="product__btn">Сделать расчет</a>
+                </div>
+
+                <div class="roof-img-section">
+                  <img src="img/calc/main-roof.png" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="find-price">
+              <p class="bg-wrap">
+                <span class="text-red">4</span>
+                Узнайте приблизительную стоимость
+              </p>
+              <ul class="find-price__list">
+                <li>Средняя цена утеплителя 50 мм кровля = 153 руб / м2</li>
+                <li>Средняя цена водосточной системы (на 1, 2, 4 скатку)</li>
+                <li>Средняя цены комплектующих = 705 руб / мм2</li>
+                <li>6 х 6 высота 3 м = 8 512 руб / 17 024 руб / 27 880 руб</li>
+              </ul>
+            </div>
+            <div class="calc-forma">
+              <div class="forma" id="">
+                <div class="modal-wrap">
+                  <div class="block-form">
+                    <div class="block-form__title">
+                      <strong>Заполните форму,</strong> и получите топ-10 советов
+                      <br />
+                      по укладке кровли на почту через 5 секунд
+                    </div>
+                    <!-- <div class="block-form__subtitle">
+                      Заполните форму и наш специалист свяжется с Вами в течение 15
+                      минут
+                    </div> -->
+                    <form>
+                      <!-- <div class="item-input">
+                        <input type="text" placeholder="Имя" required="required" />
+                      </div> -->
+                      <div class="forma__wrap">
+                        <div class="item-input">
+                          <p>Введите свой номер телефона</p>
+                          <input
+                            type="tel"
+                            placeholder="+7 (___) ___-__-__"
+                            class="input-phone"
+                            required="required"
+                          />
+                        </div>
+                        <button class="btn-2 red-btn" type="submit">
+                          Обсудить проект
+                        </button>
+                      </div>
+    
+                      <div class="checkbox-wrap">
+                        <div class="checkbox">
+                          <label>
+                            <input
+                              type="checkbox"
+                              required="required"
+                              checked="checked"
+                            />
+                            <span>Согласие на обработку персональных данных</span>
+                          </label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
         </div>
       </section>
 
