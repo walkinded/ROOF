@@ -581,7 +581,7 @@ footer a {
   /* top: 235px; */
   width: auto;
   right: 0;
-  left: 0;
+  /* left: 0; */
   z-index: -1;
   height: 610px;
 }
