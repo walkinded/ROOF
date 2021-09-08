@@ -15,6 +15,9 @@
     bottom: 20px;
     left: 20px;
   }
+  .main-section__wrap {
+    background-color: rgba(255, 255, 255, .5);
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -284,6 +287,9 @@
   .catalog__item-product {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .main-section__house-img {
+    display: none;
   }
 }
 
