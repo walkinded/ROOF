@@ -55,6 +55,9 @@
     padding: 0px 15px;
     width: auto;
   }
+  .parallax-men  {
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -71,6 +74,15 @@
   }
   .roof-img-section {
     right: -100px;
+  }
+  .main-projects__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-projects__item {
+    max-width: 100%;
+  }
+  .gallery-img__slider-big {
+    max-width: 500px;
   }
 }
 
@@ -147,6 +159,24 @@
     width: 700px;
     top: 320px;
     object-fit: contain;
+  }
+  .gallery-img__slider-big {
+    max-width: 350px;
+  }
+  .gallery-img__slider-big .slick-dots {
+    margin-top: -7px;
+  }
+  .gallery-img__slider-small {
+    display: none;
+  }
+  .parallax-men  {
+    display: none;
+  }
+  .form-parallax .form-parallax__content {
+    height: auto;
+  }
+  .form-parallax {
+    padding: 100px 0 50px;
   }
 }
 
@@ -300,6 +330,29 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .gallery-img__slider-small {
+    display: none;
+  }
+  .gallery-img__slider-big,
+  .slider-big__item {
+    max-width: 100%;
+    height: auto;
+  }
+  .gallery-img__slider-big .slick-dots {
+    margin-top: 0px;
+  }
+  .slider-big__item {
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio__box_position .slider-big__item img {
+    max-width: 100% !important;
+    width: 80% !important;
+    height: 100% !important;
+  }
+  .portfolio__box_position .portfolio__box-text {
+    border-top: 1px dashed #b8b8b8;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -382,6 +435,17 @@
   .footer_line-up {
     top: -10px;
   }
+  .main-projects__body {
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: 250px;
+    gap: 20px;
+  }
+  .main-projects__item {
+    height: auto;
+  }
+  .main-projects__name::before {
+    height: 100px;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -433,6 +497,13 @@
   .find-price__list li {
     font-size: 14px;
   }
+  .main-projects__name p {
+    position: relative;
+    font-size: 14px;
+  }
+  .box-text__list {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -454,5 +525,4 @@
   .forma textarea {
     max-width: 167px;
   }
-  
 }

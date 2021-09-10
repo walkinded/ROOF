@@ -174,3 +174,94 @@ $('.form-control').on('focus',function(){
 //   }
 //   e.stopPropagation();
 // });
+
+/* ==================== SLIDER ==================== */
+
+$('.gallery-img__slider-small').slick({
+  slidesToShow: 3,
+  vertical: true,
+  arrows: false,
+  focusOnSelect: true,
+  verticalSwiping: true,
+  asNavFor: ".gallery-img__slider-big",
+  responsive: [
+    {
+      breakpoint: 1281,
+      settings: {
+        arrows: false,
+        slidesToShow: 3
+      }
+    }
+  ]
+});
+
+$('.gallery-img__slider-big').slick({
+  slidesToShow: 1,
+  arrows: false,
+  pagination: true,
+  asNavFor: ".gallery-img__slider-small",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+  ]
+});
+
+const parallax = document.querySelector('.form-parallax');
+
+if(parallax){
+  const parallaxMen = document.querySelector('.parallax-men');
+
+  // Коэффифицент
+  const forMan = 10;
+  
+  // Скопрость анимации
+  const speed = 0.05;
+
+  // Объявление переменных
+  let posetionX = 0, posetionY = 0;
+  let coordXprocent = 0, coordYprocent = 0;
+  
+  function setMouseParallaxStyle() {
+    const distX = coordXprocent - posetionX;
+    const distY = coordYprocent - posetionY;
+  
+    posetionX = posetionX +(distX * speed);
+    // posetionY = posetionY +(distY * speed);
+  
+  
+    // Переаем стили
+    parallaxMen.style.cssText = `transform: translate(${posetionX / forMan}%,${posetionY / forMan}%);`;
+  
+    requestAnimationFrame(setMouseParallaxStyle);
+  }
+  setMouseParallaxStyle();
+
+  parallax.addEventListener('mousemove', function(e){
+    
+    // Получение высоты и ширины блока
+    const parallaxW = parallax.offsetWidth;
+    // const parallaxH = parallax.offsetHeight;
+
+    // Ноль на серединк
+    const coordX = e.pageX - parallaxW / 2;
+    // const coordY = e.pageY - parallaxH / 2;
+
+    // Получем проценты 
+    coordXprocent = coordX / parallaxW * 100;
+    // coordYprocent = coordY / parallaxH * 100;
+  }); 
+}
