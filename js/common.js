@@ -223,10 +223,10 @@ $('.gallery-img__slider-big').slick({
 const parallax = document.querySelector('.form-parallax');
 
 if(parallax){
-  const parallaxMen = document.querySelector('.parallax-men');
+  const parallaxJS = document.querySelector('.parallax-js');
 
   // Коэффифицент
-  const forMan = 10;
+  const forItem = 10;
   
   // Скопрость анимации
   const speed = 0.05;
@@ -240,11 +240,11 @@ if(parallax){
     const distY = coordYprocent - posetionY;
   
     posetionX = posetionX +(distX * speed);
-    // posetionY = posetionY +(distY * speed);
+    posetionY = posetionY +(distY * speed);
   
   
     // Переаем стили
-    parallaxMen.style.cssText = `transform: translate(${posetionX / forMan}%,${posetionY / forMan}%);`;
+    parallaxJS.style.cssText = `transform: translate(${posetionX / forItem}%,${posetionY / forItem}%);`;
   
     requestAnimationFrame(setMouseParallaxStyle);
   }
@@ -254,14 +254,14 @@ if(parallax){
     
     // Получение высоты и ширины блока
     const parallaxW = parallax.offsetWidth;
-    // const parallaxH = parallax.offsetHeight;
+    const parallaxH = parallax.offsetHeight;
 
     // Ноль на серединк
     const coordX = e.pageX - parallaxW / 2;
-    // const coordY = e.pageY - parallaxH / 2;
+    const coordY = e.pageY - parallaxH / 2;
 
     // Получем проценты 
     coordXprocent = coordX / parallaxW * 100;
-    // coordYprocent = coordY / parallaxH * 100;
+    coordYprocent = coordY / parallaxH * 100;
   }); 
 }
