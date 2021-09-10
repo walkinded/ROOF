@@ -237,10 +237,10 @@ if(parallax){
   
   function setMouseParallaxStyle() {
     const distX = coordXprocent - posetionX;
-    const distY = coordYprocent - posetionY;
+    // const distY = coordYprocent - posetionY;
   
     posetionX = posetionX +(distX * speed);
-    posetionY = posetionY +(distY * speed);
+    // posetionY = posetionY +(distY * speed);
   
   
     // Переаем стили
@@ -254,14 +254,14 @@ if(parallax){
     
     // Получение высоты и ширины блока
     const parallaxW = parallax.offsetWidth;
-    const parallaxH = parallax.offsetHeight;
+    // const parallaxH = parallax.offsetHeight;
 
     // Ноль на серединк
     const coordX = e.pageX - parallaxW / 2;
-    const coordY = e.pageY - parallaxH / 2;
+    // const coordY = e.pageY - parallaxH / 2;
 
     // Получем проценты 
     coordXprocent = coordX / parallaxW * 100;
-    coordYprocent = coordY / parallaxH * 100;
+    // coordYprocent = coordY / parallaxH * 100;
   }); 
 }
