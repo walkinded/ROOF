@@ -178,6 +178,9 @@
   .form-parallax {
     padding: 100px 0 50px;
   }
+  .portfolio__gallery-img {
+    width: auto;
+  }
 }
 
 
