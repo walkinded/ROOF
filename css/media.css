@@ -504,6 +504,9 @@
   .box-text__list {
     flex-direction: column;
   }
+  .font_medium {
+    font-size: inherit;
+  }
 }
 
 @media screen and (max-width: 375px) {
