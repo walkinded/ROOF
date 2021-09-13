@@ -1439,6 +1439,10 @@ input[type="checkbox"]::before {
   color: var(--color-white);
 }
 
+.catalog__nav .accordion__body::-webkit-scrollbar {
+  width: 0;
+}
+
 .catalog__nav .accordion__body ul li {
   position: relative;
   margin: 0px 0px 30px;
@@ -1693,6 +1697,9 @@ input[type="checkbox"]::before {
   overflow-x: scroll;
 
   margin-bottom: 60px;
+}
+.roofs-tabs__wrap::-webkit-scrollbar {
+  width: 0;
 }
 .roofs-tabs__item {
   max-width: 202px;
