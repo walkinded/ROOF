@@ -117,14 +117,14 @@ $(document).ready(function($) {
 });
 
 $(document).ready(function($) {
-  $('.select-roof').hide();
-  $('.select-roof:first').show();
-  $('.roofs-tabs__wrap li:first').addClass('main-calc_bg-active');
-  $('.roofs-tabs__wrap li').click(function(event) {
+  $('.about-company__tab_content').hide();
+  $('.about-company__tab_content:first').show();
+  $('.a-c__tabs li:first').addClass('a-c__tabs_active');
+  $('.a-c__tabs li').click(function(event) {
     event.preventDefault();
-    $('.roofs-tabs__wrap li').removeClass('main-calc_bg-active');
-    $(this).addClass('main-calc_bg-active');
-    $('.select-roof').hide();
+    $('.a-c__tabs li').removeClass('a-c__tabs_active');
+    $(this).addClass('a-c__tabs_active ');
+    $('.about-company__tab_content').hide();
 
     var selectTab = $(this).find('a').attr("href");
 
