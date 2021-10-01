@@ -2258,3 +2258,29 @@ input[type="checkbox"]::before {
   font-size: 40px;
   font-weight: var(--font-Medium);
 }
+
+/* ========== MAP ========== */
+.map-links {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 25px;
+  margin: 50px auto 0;
+}
+.map-links p {
+  font-size: 30px;
+  text-align: center;
+  color: #730510;
+  margin-bottom: 20px;
+}
+.map-links ol {
+  list-style:decimal;
+}
+.map-links li {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 20px;
+  list-style: inside decimal;
+}
