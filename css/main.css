@@ -2284,3 +2284,12 @@ input[type="checkbox"]::before {
   margin-bottom: 20px;
   list-style: inside decimal;
 }
+.map-links span {
+  font-size: 10px;
+}
+.map-links__done {
+  color: #3ea25b;
+}
+.map-links__in-progress {
+  color: var(--footer-bg-color);
+}

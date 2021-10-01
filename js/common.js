@@ -116,6 +116,22 @@ $(document).ready(function($) {
   });
 });
 
+$(document).ready(function($) {
+  $('.select-roof').hide();
+  $('.select-roof:first').show();
+  $('.roofs-tabs__wrap li:first').addClass('main-calc_bg-active');
+  $('.roofs-tabs__wrap li').click(function(event) {
+    event.preventDefault();
+    $('.roofs-tabs__wrap li').removeClass('main-calc_bg-active');
+    $(this).addClass('main-calc_bg-active');
+    $('.select-roof').hide();
+
+    var selectTab = $(this).find('a').attr("href");
+
+    $(selectTab).fadeIn();
+  });
+});
+
 
 $('.select-material__wrap .select-material__btn:first').addClass('main-calc_bg-active');
 $('.select-material__wrap .select-material__btn').click(function() {
