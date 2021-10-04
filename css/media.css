@@ -386,6 +386,9 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+  .partners__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -569,6 +572,12 @@
   }
   .font_medium {
     font-size: inherit;
+  }
+  .partners__grid {
+    grid-template-columns: 1fr;
+  }
+  .a-c__tabs {
+    min-width: auto;
   }
 }
 
