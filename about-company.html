@@ -199,7 +199,11 @@
      <section class="about-company">
       <div class="box-container">
         <div class="about-company__wrap">
-          <ul class="a-c__tabs">
+          <div class="catalog__nav_mobile">
+            <p>Компания</p>
+            <i class="fas fa-chevron-up"></i>
+          </div>
+          <ul class="a-c__tabs" id="accordion">
             <li><a href="#tab1">О компании</a></li>
             <li><a href="#tab2">Наша команда</a></li>
             <li><a href="#tab3">Отзывы</a></li>
@@ -208,7 +212,93 @@
           </ul>
           <div class="about-company__tab_container">
             <div id="tab1" class="about-company__tab_content">
-              <p>О компании</p>
+              <p class="tab_content__title"><strong>Roof – производственная компания,</strong>  <br>
+                основанная в 1992 году единомышленниками 
+                с опытом более 25 лет</p>
+
+              <img class="a-c-img a-c-img_big" src="img/about-com-1.jpg" alt="">
+
+              <p class="tab_content__title">Наша цель расти и развиваться, совершенствуя <br> свой уровень мастерства</p>
+              <div class="a-c-text">
+                <p>Компания ROOF является производителем металлических изделий для компаний, работающих в сфере строительства, нефтегазовых предприятий, различных инженерных и эксплуатационных служб.</p>
+                <p>Мощности нашего предприятия позволяют производить более 350 тонн металлоконструкций различного назначения в месяц.</p>
+                <p>Мы изготавливаем широкий спектр изделий из металла, включая строительные металлоконструкции, закладные детали, фундаментные болты, изделия для благоустройства и организации трубопроводов.</p>
+              </div>
+
+              <div class="grid-specifications__cards">
+                <div class="card card_green-border">
+                  <div class="num_block">
+                    <p>40</p>
+                    <span>человек</span>
+                  </div>
+                  <div class="desc_block">
+                    <p>Только опытные и квалифицированные сотрудники</p>
+                  </div>
+                </div>
+                <div class="card card_green-border">
+                  <div class="num_block">
+                    <p>7</p>
+                    <span>лет</span>
+                  </div>
+                  <div class="desc_block">
+                    <p>На рынке проектирования 
+                      и производства металлоконструкций</p>
+                  </div>
+                </div>
+                <div class="card card_green-border">
+                  <div class="num_block">
+                    <p>3 000</p>
+                    <span>м2</span>
+                  </div>
+                  <div class="desc_block">
+                    <p>Площадь нашего цеха и склада готовой продукции</p>
+                  </div>
+                </div>
+                <div class="card card_green-border">
+                  <div class="num_block">
+                    <p>350</p>
+                    <span>тонн</span>
+                  </div>
+                  <div class="desc_block">
+                    <p>Металлоконструкций различного 
+                      назначения в месяц.</p>
+                  </div>
+                </div>
+              </div>
+
+              <p class="tab_content__title">Собственное производство площадью <br> Х ХХХ кв. м. в Симферополе</p>
+              
+              <div class="a-c__text_bg">
+                <p>Цех укомплектован современным металлообрабатывающем и сварочным оборудованием, 
+                  что позволяет осуществлять не только полный цикл производства, но и предоставлять продукцию без посредников</p>
+              </div>
+
+              <div class="about-company__slider">
+                
+                <div class="about-company__slider-item">
+                  <img src="img/about-com-2.jpg" alt="">
+                </div>
+    
+                <div class="about-company__slider-item">
+                  <img src="img/about-com-2.jpg" alt="">
+                </div>
+    
+                <div class="about-company__slider-item">
+                  <img src="img/about-com-2.jpg" alt="">
+                </div>
+    
+                <div class="about-company__slider-item">
+                  <img src="img/about-com-2.jpg" alt="">
+                </div>
+    
+                <div class="about-company__slider-item">
+                  <img src="img/about-com-2.jpg" alt="">
+                </div>
+    
+                <div class="about-company__slider-item">
+                  <img src="img/about-com-2.jpg" alt="">
+                </div>
+              </div>
             </div>
 
             <div id="tab2" class="about-company__tab_content">
@@ -332,6 +422,7 @@
     <script src="libs/jquery-3.5.1/dist/jquery.min.js"></script>
     <script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
     <script src="libs/maskedinput/jquery.maskedinput.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

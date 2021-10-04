@@ -2172,7 +2172,7 @@ input[type="checkbox"]::before {
   height: 504px;
 }
 
-.slider-big__item  img {
+.slider-big__item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -2295,6 +2295,9 @@ input[type="checkbox"]::before {
 }
 
 /* ========== ABOUT COMPANY ========== */
+.about-company {
+  padding-bottom: 100px;
+}
 .about-company__wrap {
   display: flex;
   gap: 30px;
@@ -2310,19 +2313,164 @@ input[type="checkbox"]::before {
 .a-c__tabs li {
   width: auto;
   height: 80px;
+
   background: var(--bg-color-lighter-blue);
   border-radius: 8px;
+
   display: flex;
   align-items: center;
-  padding-left: 40px;
 
+  padding-left: 40px;
   transition: all .5s;
+
+  font-size: 16px;
+  font-weight: var(--font-Semi-bold);
+}
+.a-c__tabs li a {
+  opacity: 1;
 }
 
 .a-c__tabs li:hover {
   background: var(--bg-color-ligft-blue);
 }
+.a-c__tabs li:hover:not(.a-c__tabs_active ) a {
+  opacity: 0.4;
+}
 
 .a-c__tabs_active {
   background: var(--bg-color-ligft-blue) !important;
+}
+.tab_content__title {
+  font-size: 30px;
+  font-weight: var(--font-Semi-bold);
+  margin-bottom: 30px;
+}
+
+.a-c-img  {
+  width: 100%;
+  height: 394px;
+  border-radius: 8px;
+  margin-bottom: 35px;
+  object-fit: cover;
+}
+.a-c-img_big {
+background: var(--bg-color-ligft-blue);
+}
+.a-c-text {
+  display: grid;
+  gap: 30px;
+  font-size: 14px;
+  font-weight: var(--font-Regular);
+}
+.grid-specifications__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 458px));
+  row-gap: 30px;
+  column-gap: 40px;
+  margin-bottom: 45px;
+}
+
+.grid-specifications__cards .card {
+  padding: 20px 40px;
+}
+.num_block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  align-items: baseline;
+}
+.num_block p {
+  font-size: 72px;
+  font-weight: var(--font-Bold);
+}
+.num_block span {
+  font-size: 30px;
+  font-weight: var(--font-Bold);
+}
+.desc_block {
+  font-size: 16px;
+}
+.a-c__text_bg {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 25px 40px;
+  border-radius: 8px;
+  background: var(--bg-color-ligft-blue);
+
+  color: var(--main-text-color);
+  font-size: 16px;
+  font-weight: var(--font-Semi-bold);
+  line-height: 25px;
+}
+
+.about-company__slider {
+  position: relative;
+  max-width: 954px;
+  width: 100%;
+  height: 401px;
+  background: var(--bg-color-ligft-blue);
+  padding: 10px;
+  border-radius: 8px;
+  margin-top: 25px;
+}
+.about-company__slider-item {
+  max-width: 100%;
+  width: auto;
+  max-height: 401px;
+
+  border-radius: 8px;
+}
+.about-company__slider-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  border: 1px dashed #b7b7b7;
+  object-fit: cover;
+}
+
+.about-company__slider .slick-track {
+  display: flex;
+}
+.slick-arrow {
+  top: 50%;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 3px;
+
+  margin: 0 -10px;
+
+  color: var(--main-red-color);
+  background: var(--bg-color-ligft-blue);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+}
+.slick-prev {
+  position: absolute;
+  left: 0;
+}
+.slick-next {
+  position: absolute;
+  right: 0;
+}
+.slick-prev i,
+.slick-next i {
+  transition: all .2s;
+}
+.slick-prev:hover i {
+  transform: translateX(-3px);
+}
+.slick-next:hover i {
+  transform: translateX(3px);
+}
+.slick-prev:active i {
+  transform: translateX(0);
+}
+.slick-next:active i {
+  transform: translateX(0);
 }

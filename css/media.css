@@ -181,6 +181,26 @@
   .portfolio__gallery-img {
     width: auto;
   }
+  .about-company__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-specifications__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+  }
+  .a-c__tabs {
+    max-width: 100%;
+  }
+  .a-c__tabs li {
+    height: 50px;
+  }
+  .about-company__slider {
+    position: relative;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
 }
 
 
@@ -448,6 +468,19 @@
   }
   .main-projects__name::before {
     height: 100px;
+  }
+  .tab_content__title {
+    font-size: 24px;
+  }
+  .num_block p {
+    font-size: 52px;
+  }
+  .a-c-img {
+    width: 100%;
+    height: 250px;
+  }
+  .about-company__slider-item img {
+    height: 200px;
   }
 }
 

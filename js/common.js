@@ -156,7 +156,7 @@ $(document).ready(function() {
 
 
 $('.catalog__nav_mobile').on('click', function(){
-  $(this).siblings('.item__accordion').slideToggle(500);
+  $(this).siblings('#accordion').slideToggle(500);
   $(this).find('i').toggleClass('rotate');
 });
 
@@ -168,9 +168,9 @@ $('.form-control').keyup(function(){
 
   
   if(Value === '0') {
-    $(this).siblings('.error-msg').css({'display':'block'})
+    $(this).siblings('.error-msg').css({'display':'block'});
   } else {
-    $(this).siblings('.error-msg').css({'display':'none'})
+    $(this).siblings('.error-msg').css({'display':'none'});
   }
 
   if(Value.length == '') {
@@ -178,11 +178,11 @@ $('.form-control').keyup(function(){
   } else {
     $(this).siblings('.form-row__title').addClass('form-row__title-active')
   }
-})
+});
 
 $('.form-control').on('focus',function(){
   $(this).siblings('.form-row__title').addClass('form-row__title-active')
-})
+});
 
 // $(document).on('click', function(e) {
 //   if (!$(e.target).closest(".form-control").length) {
@@ -216,6 +216,32 @@ $('.gallery-img__slider-big').slick({
   arrows: false,
   pagination: true,
   asNavFor: ".gallery-img__slider-small",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+  ]
+});
+
+$('.about-company__slider').slick({
+  slidesToShow: 1,
+  arrows: true,
+  pagination: false,
+  prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+  nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
   responsive: [
     {
       breakpoint: 1024,
