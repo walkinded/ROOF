@@ -2302,13 +2302,13 @@ input[type="checkbox"]::before {
   gap: 30px;
 }
 .about-company__tab_container {
-  /* max-width: 957px;
-  width: auto; */
-}
-.about-company__tab_content {
   max-width: 957px;
   width: auto;
 }
+.about-company__tab_content {
+  /* max-width: 957px;
+  width: auto;*/
+} 
 .a-c__tabs {
   min-width: 372px;
   /* width: 100%; */
@@ -2412,8 +2412,9 @@ input[type="checkbox"]::before {
 }
 
 .about-company__slider {
+  display: grid;
   position: relative;
-  height: 401px;
+  max-height: 401px;
   background: var(--bg-color-ligft-blue);
   padding: 10px;
   border-radius: 8px;
@@ -2543,6 +2544,7 @@ input[type="checkbox"]::before {
 
 .about-company__reviews-slider {
   position: relative;
+  display: grid;
 }
 .about-company__reviews-slider .slick-slider {
   max-width: 900px;
