@@ -2289,6 +2289,9 @@ input[type="checkbox"]::before {
 .map-links__in-progress {
   color: var(--footer-bg-color);
 }
+.map-links__wait {
+  color:orange;
+}
 
 /* ========== ABOUT COMPANY ========== */
 .about-company {
