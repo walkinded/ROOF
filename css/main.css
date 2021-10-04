@@ -1982,7 +1982,7 @@ input[type="checkbox"]::before {
 .main-projects__img-box:hover {
   opacity: 1;
 }
-.main-projects__img-box:hover img  {
+.main-projects__img-box:hover img {
   transform: scale(1.1);
 }
 
@@ -1994,10 +1994,9 @@ input[type="checkbox"]::before {
 
   transition: all 0.5s;
 }
-.main-projects__item img:hover ~ .main-projects__name p  {
+.main-projects__item img:hover ~ .main-projects__name p {
   transform: translateX(10px);
 }
-
 
 .main-projects__name {
   position: absolute;
@@ -2005,8 +2004,7 @@ input[type="checkbox"]::before {
   bottom: 0;
   z-index: 1;
   color: var(--white-color);
-  transition: all .5s;
-  
+  transition: all 0.5s;
 }
 .main-projects__name p {
   position: relative;
@@ -2014,8 +2012,7 @@ input[type="checkbox"]::before {
   font-weight: var(--font-Bold);
   padding: 0 20px;
   margin-bottom: 10px;
-  transition: all .5s;
-
+  transition: all 0.5s;
 }
 
 .main-projects__name span {
@@ -2081,7 +2078,8 @@ input[type="checkbox"]::before {
   display: flex;
 }
 
-.slick-slider {}
+.slick-slider {
+}
 
 .slick-list {
   overflow: hidden;
@@ -2119,7 +2117,7 @@ input[type="checkbox"]::before {
   object-fit: cover;
 }
 
-.slider-small__item:not(.slick-current) img{
+.slider-small__item:not(.slick-current) img {
   opacity: 0.6;
 }
 
@@ -2166,7 +2164,7 @@ input[type="checkbox"]::before {
   width: 100%;
 }
 
-.slider-big__item  {
+.slider-big__item {
   max-width: 750px;
   width: 100% !important;
   height: 504px;
@@ -2177,7 +2175,6 @@ input[type="checkbox"]::before {
   height: 100%;
   object-fit: cover;
 }
-
 
 .slick-dots {
   margin-top: 30px;
@@ -2191,7 +2188,7 @@ input[type="checkbox"]::before {
   margin: 0px 5px;
 }
 
-.slick-dots  button{
+.slick-dots button {
   font-size: 0;
   border: 1px solid var(--main-red-color);
   width: 10px;
@@ -2208,7 +2205,7 @@ input[type="checkbox"]::before {
 /* form-parallax */
 .form-parallax {
   position: relative;
-  background: url('../img/form-bg.png') no-repeat center top / cover ;
+  background: url("../img/form-bg.png") no-repeat center top / cover;
   padding-top: 100px;
   z-index: 1;
   pointer-events: all;
@@ -2234,7 +2231,6 @@ input[type="checkbox"]::before {
 }
 .form-parallax .modal-wrap::before {
   box-shadow: 0 10px 10px 5px rgb(0 0 0 / 10%);
-
 }
 .parallax-men {
   position: absolute;
@@ -2276,7 +2272,7 @@ input[type="checkbox"]::before {
   margin-bottom: 20px;
 }
 .map-links ol {
-  list-style:decimal;
+  list-style: decimal;
 }
 .map-links li {
   text-transform: uppercase;
@@ -2301,11 +2297,18 @@ input[type="checkbox"]::before {
 .about-company__wrap {
   display: flex;
   gap: 30px;
-  /* justify-content: space-between; */
+}
+.about-company__tab_container {
+  max-width: 957px;
+  width: auto;
+}
+.about-company__tab_content {
+  /* max-width: 100%; */
+  width: auto;
 }
 .a-c__tabs {
-  max-width: 372px;
-  width: 100%;
+  min-width: 372px;
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -2321,7 +2324,7 @@ input[type="checkbox"]::before {
   align-items: center;
 
   padding-left: 40px;
-  transition: all .5s;
+  transition: all 0.5s;
 
   font-size: 16px;
   font-weight: var(--font-Semi-bold);
@@ -2333,7 +2336,7 @@ input[type="checkbox"]::before {
 .a-c__tabs li:hover {
   background: var(--bg-color-ligft-blue);
 }
-.a-c__tabs li:hover:not(.a-c__tabs_active ) a {
+.a-c__tabs li:hover:not(.a-c__tabs_active) a {
   opacity: 0.4;
 }
 
@@ -2346,15 +2349,16 @@ input[type="checkbox"]::before {
   margin-bottom: 30px;
 }
 
-.a-c-img  {
-  width: 100%;
+.a-c-img {
+  max-width: 100%;
+  width: auto;
   height: 394px;
   border-radius: 8px;
   margin-bottom: 35px;
   object-fit: cover;
 }
 .a-c-img_big {
-background: var(--bg-color-ligft-blue);
+  background: var(--bg-color-ligft-blue);
 }
 .a-c-text {
   display: grid;
@@ -2406,8 +2410,6 @@ background: var(--bg-color-ligft-blue);
 
 .about-company__slider {
   position: relative;
-  max-width: 954px;
-  width: 100%;
   height: 401px;
   background: var(--bg-color-ligft-blue);
   padding: 10px;
@@ -2415,10 +2417,7 @@ background: var(--bg-color-ligft-blue);
   margin-top: 25px;
 }
 .about-company__slider-item {
-  max-width: 100%;
-  width: auto;
   max-height: 401px;
-
   border-radius: 8px;
 }
 .about-company__slider-item img {
@@ -2431,6 +2430,7 @@ background: var(--bg-color-ligft-blue);
 
 .about-company__slider .slick-track {
   display: flex;
+  overflow: hidden;
 }
 .slick-arrow {
   top: 50%;
@@ -2460,7 +2460,7 @@ background: var(--bg-color-ligft-blue);
 }
 .slick-prev i,
 .slick-next i {
-  transition: all .2s;
+  transition: all 0.2s;
 }
 .slick-prev:hover i {
   transform: translateX(-3px);
@@ -2473,4 +2473,158 @@ background: var(--bg-color-ligft-blue);
 }
 .slick-next:active i {
   transform: translateX(0);
+}
+
+.grid-team__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.team__person {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.team__person_img {
+  position: relative;
+  border-radius: 50%;
+  min-width: 143px;
+  max-width: 143px;
+  height: 143px;
+}
+.team__person_img img {
+  width: 100%;
+  height: 100%;
+}
+.online {
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  display: flex;
+  width: 12px;
+  height: 12px;
+  background: #64c400;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.team__about {
+  margin-top: 25px;
+}
+.team__person-name {
+  font-size: 18px;
+  font-weight: var(--font-Semi-bold);
+}
+.team__contacts {
+}
+
+.hr_color {
+  width: calc(100% + 40px);
+  margin: 35px 0px 25px -20px;
+  background: var(--bg-color-ligft-blue);
+  border: 0;
+  height: 1px;
+}
+.team__contacts {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.team__contacts li p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+.team__contacts li a {
+  font-size: 16px;
+  font-weight: var(--font-Bold);
+}
+
+.about-company__reviews-slider {
+  position: relative;
+}
+.about-company__reviews-slider .slick-track {
+  display: flex;
+  /* height: calc(100% + 20px); */
+}
+.about-company__reviews-slider .slick-list {
+  /* padding-bottom: 20px; */
+}
+.reviews-slider-item {
+  margin: 0 20px 20px;
+}
+.reviews-slider__date {
+  font-size: 14px;
+  color: #666666;
+  padding: 5px 8px;
+  background: var(--bg-color-ligft-blue);
+}
+.reviews-slider__name {
+  font-size: 18px;
+  font-weight: var(--font-Semi-bold);
+  margin: 27px 0;
+}
+.reviews-slider__review {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.btn_red {
+  position: relative;
+  width: auto;
+  font-size: 14px;
+  color: var(--main-red-color);
+}
+
+.btn_red::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: var(--main-red-color);
+  bottom: 0;
+}
+.about-company__accordion {
+}
+
+.partners__grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.partners__item {
+  border-radius: 8px;
+  border: 1px dashed #b7b7b7;
+  height: 164px;
+
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.partners__item img {
+  max-width: 132px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.certif {
+  font-size: 16px;
+  font-weight: var(--font-Semi-bold);
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.certif img {
+  width: 30px;
+  height: 36px;
+  margin-right: 30px;
+}
+.certif a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.certif .card_green-border:before {
+  box-shadow: 0 10px 10px 5px rgb(0 0 0 / 10%);
 }

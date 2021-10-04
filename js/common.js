@@ -122,6 +122,8 @@ $(document).ready(function($) {
   $('.a-c__tabs li:first').addClass('a-c__tabs_active');
   $('.a-c__tabs li').click(function(event) {
     event.preventDefault();
+    $('.about-company__reviews-slider').slick('refresh');
+    $('.about-company__slider').slick('refresh');
     $('.a-c__tabs li').removeClass('a-c__tabs_active');
     $(this).addClass('a-c__tabs_active ');
     $('.about-company__tab_content').hide();
@@ -154,11 +156,20 @@ $(document).ready(function() {
   });
 });
 
-
 $('.catalog__nav_mobile').on('click', function(){
   $(this).siblings('#accordion').slideToggle(500);
   $(this).find('i').toggleClass('rotate');
 });
+if ($(window).width() < 1025) {
+  $('.a-c__tabs li').on('click', function(){
+    $('.catalog__nav_mobile').siblings('#accordion').slideToggle(500);
+    $('.catalog__nav_mobile').find('i').toggleClass('rotate');
+  });
+}
+
+
+
+
 
 
 /* ==================== REGULAR ==================== */
@@ -240,6 +251,34 @@ $('.about-company__slider').slick({
   slidesToShow: 1,
   arrows: true,
   pagination: false,
+  variableWidth: true,
+  prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+  nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+  ]
+});
+
+$('.about-company__reviews-slider').slick({
+  slidesToShow: 2,
+  arrows: true,
+  pagination: false,
+  variableWidth: true,
   prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
   nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
   responsive: [

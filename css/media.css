@@ -38,7 +38,6 @@
   .product__card img {
     max-width: 100%;
   }
-
 }
 
 @media screen and (max-width: 1366px) {
@@ -184,6 +183,7 @@
   .about-company__wrap {
     display: flex;
     flex-direction: column;
+    gap: 10px;
   }
   .grid-specifications__cards {
     display: grid;
@@ -200,6 +200,12 @@
     max-width: 100%;
     width: auto;
     height: auto;
+  }
+  .about-company__tab_container {
+    width: 100%;
+  }
+  .a-c__tabs {
+    display: none;
   }
 }
 
@@ -376,6 +382,10 @@
   .portfolio__box_position .portfolio__box-text {
     border-top: 1px dashed #b8b8b8;
   }
+  .grid-team__cards {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -481,6 +491,23 @@
   }
   .about-company__slider-item img {
     height: 200px;
+  }
+  .team__person_img {
+    min-width: 100px;
+    max-width: 100px;
+    height: 100px;
+  }
+  .online {
+    left: 10px;
+  }
+  .team__contacts li a {
+    font-size: 12px;
+  }
+  .hr_color {
+    margin: 10px 0px 10px -20px;
+  }
+  .team__contacts li p {
+    margin-bottom: 5px;
   }
 }
 
