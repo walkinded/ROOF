@@ -251,7 +251,7 @@ $('.about-company__slider').slick({
   slidesToShow: 1,
   arrows: true,
   pagination: false,
-  variableWidth: true,
+  // variableWidth: true,
   prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
   nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
   responsive: [
@@ -278,7 +278,7 @@ $('.about-company__reviews-slider').slick({
   slidesToShow: 2,
   arrows: true,
   pagination: false,
-  variableWidth: true,
+  // variableWidth: true,
   prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
   nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
   responsive: [
