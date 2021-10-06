@@ -2306,7 +2306,7 @@ input[type="checkbox"]::before {
 }
 .about-company__tab_container {
   max-width: 957px;
-  width: auto;
+  width: 100%;
 }
 .about-company__tab_content {
   /* max-width: 957px;
@@ -2640,4 +2640,49 @@ input[type="checkbox"]::before {
 }
 .certif .card_green-border:before {
   box-shadow: 0 10px 10px 5px rgb(0 0 0 / 10%);
+}
+
+.item__accordion_vacancy {
+  max-width: 100%;
+  width: auto;
+}
+.item__accordion_vacancy .accordion__wrap {
+  max-width: 100%;
+  width: auto;
+  margin-bottom: 40px;
+}
+.item__accordion_vacancy .card::before {
+  box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.2);
+
+}
+.item__accordion_vacancy .accordion__wrap:first-child {
+  border-radius: 8px;
+}
+.item__accordion_vacancy .accordion__head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: var(--font-Semi-bold);
+  padding: 0px 30px 0px 0px;
+}
+
+.item__accordion_vacancy .accordion__head i {
+  right: 0;
+  font-size: 20px;
+  transform: rotate(45deg);
+}
+.accordion__body_vacancy ul{
+  font-size: 14px;
+  font-weight: var(--font-Medium);
+}
+.accordion__body_vacancy li {
+  margin-bottom: 15px;
+}
+
+.accordion__body_vacancy .a-c-text {
+  margin: 30px 0;
+}
+
+.item__accordion_vacancy .card::after {
+  display: none;
 }
