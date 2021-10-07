@@ -512,6 +512,12 @@
   .team__contacts li p {
     margin-bottom: 5px;
   }
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+  .grid-partners__cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 550px) {
