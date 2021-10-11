@@ -307,6 +307,9 @@
   .main-section__house-img {
     display: none;
   }
+  .main-news__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -584,6 +587,15 @@
   }
   .a-c__tabs {
     min-width: auto;
+  }
+  .main-news__items {
+    grid-template-columns: 1fr;
+  }
+  .main-news__item {
+    max-width: 100%;
+  }
+  .page-numbers {
+    margin: 0px 5px
   }
 }
 

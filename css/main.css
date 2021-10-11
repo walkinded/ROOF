@@ -1605,35 +1605,22 @@ input[type="checkbox"]::before {
   width: 100%;
   margin: 0 auto;
 }
-.pager ul {
-  display: flex;
-  align-items: center;
-}
-
-.pager ul li {
-  margin: 0px 10px;
-  background: transparent;
-  border-radius: 6px;
-  width: 30px;
-  height: 30px;
-  font-size: 14px;
-  font-weight: var(--font-Medium);
-
-  transition: all 0.5s;
-}
-.pager ul li:hover {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-color-lighter-blue);
-}
-
 .page-numbers {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+
+  margin: 0px 10px;
+  min-width: 30px;
+  height: 30px;
+
+  font-weight: var(--font-Medium);
+  font-size: 14px;
+  border-radius: 6px;
+  transition: all 0.5s;
+}
+.page-numbers:hover {
+  background: var(--bg-color-lighter-blue);
 }
 
 .current {
@@ -2809,19 +2796,61 @@ input[type="checkbox"]::before {
 .main-news {
   padding-bottom: 100px;
 }
-.main-news__wrap {
-}
 .main-news__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 23px;
+  margin-bottom: 35px;
 }
 .main-news__item {
+  position: relative;
   max-width: 417px;
   min-height: 486px;
   padding: 10px;
   background: var(--bg-color-lighter-blue);
   border-radius: 8px;
+}
+.main-news__item::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  border-radius: 9px;
+  top: -1px;
+  left: -1px;
+  background: transparent;
+  z-index: -1;
+  transition: all .7s;
+}
+.main-news__item::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-radius: 9px;
+  bottom: -1px;
+  right: -1px;
+  background: transparent;
+  z-index: -1;
+  transition: all .7s;
+}
+
+.main-news__item:hover::before {
+  border-left: 1px solid var(--main-red-color);
+  border-top: 1px solid var(--main-red-color);
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
+}
+
+.main-news__item:hover::after {
+  border-right: 1px solid var(--main-red-color);
+  border-bottom: 1px solid var(--main-red-color);
+  width: calc(100% + 1px);
+  height: calc(100% + 1px);
 }
 
 .main-news__item img {
@@ -2844,7 +2873,7 @@ input[type="checkbox"]::before {
   padding: 27px 19px 19px;
 }
 
-.main-news__content  .reviews-slider__date {
+.main-news__content .reviews-slider__date {
   display: block;
   margin-bottom: 22px;
   width: max-content;
