@@ -2897,3 +2897,138 @@ input[type="checkbox"]::before {
   font-weight: var(--font-Medium);
   margin-top: 32px;
 }
+
+/* ARTICLE */
+
+.main-article {
+  margin-bottom: 100px;
+}
+.article-title {
+  font-size: 36px;
+  font-weight: var(--font-Semi-bold);
+  margin-bottom: 20px;
+}
+.article__wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px
+}
+
+.news-article {
+  max-width: 720px;
+  width: 100%;
+}
+
+.news-article p {
+  font-size: 14px;
+  font-weight: var(--font-Regular);
+  padding: 15px 0;
+  line-height: 25px;
+}
+
+.news-article ul,
+.news-article ol {
+  position: relative;
+}
+.news-article li {
+  padding: 15px 0;
+}
+
+.news-article ul {
+  font-size: 16px;
+  font-weight: var(--font-Semi-bold);
+}
+
+.news-article ul li {
+  margin-left: 39px;
+  display: flex;
+  align-items: center;
+}
+
+.news-article ul li::before {
+  position: absolute;
+  content: "";
+  background: url('../img/line-stile-img.png');
+  width: 23px;
+  height: 23px;
+  left: 0;
+}
+
+.news-article ol li {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.news-article ol li::before {
+  position: absolute;
+  content: "•";
+  left: 0px;
+}
+
+.news-article blockquote {
+  margin: 15px 0;
+  border-radius: 8px;
+  padding: 25px 39px;
+  width: auto;
+
+  font-size: 14px;
+  line-height: 25px;
+  font-weight: var(--font-Medium);
+  background: var(--bg-color-lighter-blue);
+}
+
+.news-article h2 {
+  font-size: 30px;
+  font-weight: var(--font-Semi-bold);
+  padding: 35px 0 15px;
+}
+
+
+
+.article__right-side img {
+  max-width: 597px;
+  max-height: 394px;
+
+  width: 100%;
+  height: 100%;
+
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 55px;
+}
+
+.article__right-side blockquote {
+  position: relative;
+  max-width: 507px;
+  width: auto;
+  padding: 40px 45px;
+  border-radius: 8px;
+  font-size: 14px;
+  line-height: 25px;
+  font-style: italic;
+  background: var(--bg-color-lighter-blue);
+}
+
+.article__right-side blockquote::before {
+  position: absolute;
+  content: ",,";
+  font-size: 72px;
+  color: var(--main-red-color);
+
+  top: -38px;
+  left: 35px;
+  font-style:normal;
+  font-weight: var(--font-Semi-bold);
+}
+
+.article__right-side blockquote::after {
+  position: absolute;
+  content: ",,";
+  font-size: 72px;
+  color: var(--main-red-color);
+
+  bottom: 13px;
+  right: 35px;
+  font-style:normal;
+  font-weight: var(--font-Semi-bold);
+}
