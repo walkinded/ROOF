@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="libs/fancybox-2.1.7/source/jquery.fancybox.css"
+    />
+    <link rel="stylesheet" href="libs/fontawesome/css/all.min.css" />
+    <title>Карточка товара</title>
+  </head>
+  <body>
+    <main>
+      <div class="header-nav-union">
+        <!--========== header ==========-->
+        <header class="header_relactive">
+          <div class="header-top">
+            <div class="box-container">
+              <div class="header-top__wrap">
+                <div class="header-top__city">
+                  <div class="select select_color">
+                    <input class="select__input" type="hidden" name="" />
+                    <div class="select__head">Симферополь</div>
+                    <ul class="select__list" style="display: none">
+                      <li class="select__item"><a href="#">Севастополь</a></li>
+                      <li class="select__item"><a href="#">Бахчисарай</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header-top__nav">
+                  <ul>
+                    <li><a href="#">О компании</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Оплата и доставка</a></li>
+                    <li><a href="#">Блог </a></li>
+                    <li><a href="contact.html">Контакты</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="header-bottom">
+            <div class="box-container">
+              <div class="header-bottom__wrap">
+                <div class="header-bottom__logo">
+                  <a href="index.html"><img src="img/icons/logo.svg" alt="" /></a>
+                  <p>Производство и продажа кровельных материалов в Крыму</p>
+                </div>
+
+                <div class="header-bottom__address">
+                  <img src="img/header-map.jpg" alt="" />
+                  <p>
+                    <strong>г. Симферополь</strong> <br />
+                    ул. Генерала Васильева, 30 з
+                  </p>
+                </div>
+
+                <div class="header-bottom__tel">
+                  <div class="select select_color">
+                    <input class="select__input" type="hidden" name="" />
+                    <div class="select__head">
+                      <a href="tel:+79787027020">+7 (978) 702-70-20</a>
+                    </div>
+                    <ul class="select__list" style="display: none">
+                      <li class="select__item">
+                        <a href="#">+7 (978) 702-70-21</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <a class="mail_underline" href="#">roof-zavod@gmail.com</a>
+                </div>
+
+                <a href="#" class="green-btn green-btn_header"
+                  >Записаться на бесплатный <br />
+                  замер-консультацию</a
+                >
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!--========== navigation ==========-->
+        <section class="navigation navigation_relactive">
+          <div class="box-container">
+            <nav class="bg-wrap bg-wrap_modify">
+              <span class="header__button-menu"
+                ><i class="fas fa-bars"></i
+              ></span>
+              <ul>
+                <li>
+                  <div class="select select_color">
+                    <input class="select__input" type="hidden" name="" />
+                    <div class="select__head">
+                      <a href="catalog.html">Каталог</a>
+                    </div>
+                    <ul class="select__list" style="display: none">
+                      <li class="select__item"><a href="#">Каталог 1</a></li>
+                      <li class="select__item"><a href="#">Каталог 2</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="projects.html">Портфолио</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Статьи и новости </a></li>
+                <li><a href="contact.html">Контакты</a></li>
+              </ul>
+              <div class="search">
+                <input type="text" placeholder="Поиск" />
+                <a href="#"><i class="fas fa-search"></i></a>
+              </div>
+            </nav>
+
+            <div class="header__mobile">
+              <span class="header__mobile-close"
+                ><i class="fas fa-times"></i
+              ></span>
+              <div class="header__nav_mobile">
+                <ul class="header__nav_item_mobile">
+                  <li>
+                    <div class="select select_color">
+                      <input class="select__input" type="hidden" name="" />
+                      <div class="select__head">Каталог</div>
+                      <ul class="select__list" style="display: none">
+                        <li class="select__item"><a href="#">Каталог 1</a></li>
+                        <li class="select__item"><a href="#">Каталог 2</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Прайс-лист</a></li>
+                  <li><a href="projects.html">Портфолио</a></li>
+                  <li><a href="#">Доставка и оплата</a></li>
+                  <li><a href="#">Статьи и новости </a></li>
+                  <li><a href="contact.html">Контакты</a></li>
+                </ul>
+                <div class="main-header__phones">
+                  <a href="#">+7 978 749-05-42</a>
+                  <a href="#">+7 978 984-25-69</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div>
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1826.3 91.7"
+            style="enable-background: new 0 0 1826.3 91.7"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: #f6f9fc;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M1826.3,0v91.7H1625c-37.8,0.6-35.2-27.4-60.3-27.4c-434.4,0-868.8,0-1303.3,0c-25.1,0-22.5,27.9-60.3,27.4H0
+		V0C608.8,0,1217.5,0,1826.3,0L1826.3,0z"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <section class="breadcrumb">
+        <div class="box-container">
+            <ol itemscope itemtype="#">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="#">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name" class="breadcrumb_font_style">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                    <span class="span_m_l_20 breadcrumb_font_style"><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li itemprop="itemListElement" itemscope
+                    itemtype="#">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name" class="breadcrumb_font_style">Каталог   </span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                    <span class="span_m_l_20 breadcrumb_font_style"><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                    <span class="breadcrumb_font_style">Кровля</span>
+                </li>
+            </ol>
+        </div>
+      </section>
+
+      <section class="product-card">
+        <div class="box-container">
+          <div class="product-card__wrap">
+            <div class="product-card__gallery">
+              <div class="product-card__big-slider">
+                <div class="big-slider__item">
+                  <img src="img/catalog/prodict1.jpg" alt="">
+                </div>
+                <div class="big-slider__item">
+                  <img src="img/catalog/prodict2.jpg" alt="">
+                </div>
+                <div class="big-slider__item">
+                  <img src="img/catalog/prodict3.jpg" alt="">
+                </div>
+                <div class="big-slider__item">
+                  <img src="img/catalog/prodict4.jpg" alt="">
+                </div>
+              </div>
+              <div class="product-card__small-slider">
+                <div class="small-slider__item">
+                  <img src="img/catalog/prodict1.jpg" alt="">
+                </div>
+                <div class="small-slider__item">
+                  <img src="img/catalog/prodict2.jpg" alt="">
+                </div>
+                <div class="small-slider__item">
+                  <img src="img/catalog/prodict3.jpg" alt="">
+                </div>
+                <div class="small-slider__item">
+                  <img src="img/catalog/prodict4.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="product-card__desc">
+              <p class="product-card__desc-title">Металлочерепица модульная квинта Uno Grand Line c 3D резом 0,5 Satin RAL 7024 мокрый асфальт</p>
+              <span class="item-number">
+                Артикул: 12345
+              </span>
+              <div class="product-card__desc-list">
+
+                <div class="desc-list__item">
+                  <p>Ширина листа (полная)</p>
+                  <span class="line-feature"></span>
+                  <p><strong>1,18 м</strong></p>
+                </div>
+
+                <div class="desc-list__item">
+                  <p>Ширина листа полезная</p>
+                  <span class="line-feature"></span>
+                  <p><strong>1,1 м</strong></p>
+                </div>
+
+                <div class="desc-list__item">
+                  <p>Высота профиля</p>
+                  <span class="line-feature"></span>
+                  <p><strong>25 + 14 мм</strong></p>
+                </div>
+
+                <div class="desc-list__item">
+                  <p>Шаг волны листа</p>
+                  <span class="line-feature"></span>
+                  <p><strong>350 мм</strong></p>
+                </div>
+
+                <div class="desc-list__item">
+                  <p>Толщина металла.</p>
+                  <span class="line-feature"></span>
+                  <p><strong>0,4-0,5 мм</strong></p>
+                </div>
+
+              </div>
+              <div class="product-card__price-btn">
+                <span>15 900 ₽/шт</span>
+                <a href="#" class="red-btn">Заказать</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card__info">
+            <div class="product-card__info-tab_wrap">
+              <ul class="tabs bg-wrap">
+                <li><a href="#tab1">Характеристики</a></li>
+                <li><a href="#tab2">Описание</a></li>
+                <li><a href="#tab3">Отзывы</a></li>
+              </ul>
+              <div class="product-card__info-tab_container ">
+                <div id="tab1" class="product-card__info-tab_content card">
+                  <div class="product-card__desc-list">
+
+                    <div class="desc-list__item">
+                      <p>Ширина листа (полная)</p>
+                      <span class="line-feature"></span>
+                      <p><strong>1,18 м</strong></p>
+                    </div>
+    
+                    <div class="desc-list__item">
+                      <p>Ширина листа полезная</p>
+                      <span class="line-feature"></span>
+                      <p><strong>1,1 м</strong></p>
+                    </div>
+    
+                    <div class="desc-list__item">
+                      <p>Высота профиля</p>
+                      <span class="line-feature"></span>
+                      <p><strong>25 + 14 мм</strong></p>
+                    </div>
+    
+                    <div class="desc-list__item">
+                      <p>Шаг волны листа</p>
+                      <span class="line-feature"></span>
+                      <p><strong>350 мм</strong></p>
+                    </div>
+    
+                    <div class="desc-list__item">
+                      <p>Толщина металла.</p>
+                      <span class="line-feature"></span>
+                      <p><strong>0,4-0,5 мм</strong></p>
+                    </div>
+    
+                  </div>
+                  <div class="product-card__desc-list">
+
+                    <div class="desc-list__item">
+                      <p>Ширина листа (полная)</p>
+                      <span class="line-feature"></span>
+                      <p><strong>1,18 м</strong></p>
+                    </div>
+    
+                    <div class="desc-list__item">
+                      <p>Ширина листа полезная</p>
+                      <span class="line-feature"></span>
+                      <p><strong>1,1 м</strong></p>
+                    </div>
+    
+                    <div class="desc-list__item">
+                      <p>Высота профиля</p>
+                      <span class="line-feature"></span>
+                      <p><strong>25 + 14 мм</strong></p>
+                    </div>
+    
+                    <div class="desc-list__item">
+                      <p>Шаг волны листа</p>
+                      <span class="line-feature"></span>
+                      <p><strong>350 мм</strong></p>
+                    </div>
+    
+                    <div class="desc-list__item">
+                      <p>Толщина металла.</p>
+                      <span class="line-feature"></span>
+                      <p><strong>0,4-0,5 мм</strong></p>
+                    </div>
+    
+                  </div>
+                </div>
+                <div id="tab2" class="product-card__info-tab_content ">
+                  <div class="info-tab-content__desc card">
+                    <p class="tab_content__title">Металлочерепица модульная квинта Uno Grand Line c 3D резом 0,5 Satin RAL 7024 мокрый асфальт</p>
+
+                    <div class="info-tab-content-desc__wrap">
+                      <p>Оригинальный рисунок профиля металлочерепицы Kvinta</p>
+                      <p>plus перенесет Вас в Европу с ее маленькими, красивыми, уютными домиками. Благодаря наличию канавки на гребне этот вид черепицы выгодно отличается от аналогов повышенной прочностью </p>
+                      <p>и элегантным внешним видом. За счет большей габаритной ширины, по сравнению с другими профилями, металлочерепица Kvinta </p>
+                      <p>plus является более экономичной. Металлочерепица Kvinta plus изготовлена из оцинкованной стали, устойчивой к значительным механическим нагрузкам, давлению и коррозии.</p>
+                    </div>
+
+                    <p class="tab_content__subtitle" >Особенности и преимущества металлочерепицы:</p>
+                    <ul class="dotted-list">
+                      <li>Красивый внешний вид, широкая цветовая палитра, разнообразие текстур с высокими эксплуатационными характеристиками</li>
+                      <li>Повышенная прочность за счет наличия канавки на гребне.</li>
+                      <li>Устойчивость к воздействию атмосферных осадков.</li>
+                      <li>Устойчивость к ультрафиолету. С течением времени покрытие не теряет насыщенности цвета.</li>
+                      <li>Металлочерепица Kvinta plus отличается габаритной шириной, и по сравнению с другими профилями она является более экономичной.</li>
+                      <li>Высокая точность геометрии стыков.</li>
+                    </ul>
+                  </div>
+                  <div class="product-card__info-doc">
+                    <p class="info-doc-title">Документация:</p>
+                    <ul class="certif">
+                      <li class="card card_green-border">
+                        <a href="#">
+                          <img src="img/pdf-file.png" alt="">
+                          <div>
+                            <p>Экологический сертификат соответствия</p>
+                            <span>JPG, 248.76 Кб</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card card_green-border">
+                        <a href="#">
+                          <img src="img/pdf-file.png" alt="">
+                          <div>
+                            <p>Экологический сертификат соответствия</p>
+                            <span>JPG, 248.76 Кб</span>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="card card_green-border">
+                        <a href="#">
+                          <img src="img/pdf-file.png" alt="">
+                          <div>
+                            <p>Экологический сертификат соответствия</p>
+                            <span>JPG, 248.76 Кб</span>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div id="tab3" class="product-card__info-tab_content">
+                  Отзывы
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="similar-products">
+            <p class="title">Похожие товары</p>
+            <div class="box-container">
+              <div class="similar-products__slider">
+
+                <div class="similar-products__item">
+                  <div class="product__card">
+                    <a href="#">
+                      <img src="img/catalog/prodict1.jpg" alt="">
+                    </a>
+  
+                    <div class="product__card-wrap">
+                      <span class="item-number">Артикул: 12345</span>
+                      <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
+  
+                      <div class="product__price-box">
+                        <span>7 100 ₽</span>
+                        <a href="#" class="product__btn">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="similar-products__item">
+                  <div class="product__card">
+                    <a href="#">
+                      <img src="img/catalog/prodict2.jpg" alt="">
+                    </a>
+  
+                    <div class="product__card-wrap">
+                      <span class="item-number">Артикул: 12345</span>
+                      <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
+  
+                      <div class="product__price-box">
+                        <span>7 100 ₽</span>
+                        <a href="#" class="product__btn">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="similar-products__item">
+                  <div class="product__card">
+                    <a href="#">
+                      <img src="img/catalog/prodict3.jpg" alt="">
+                    </a>
+  
+                    <div class="product__card-wrap">
+                      <span class="item-number">Артикул: 12345</span>
+                      <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
+  
+                      <div class="product__price-box">
+                        <span>7 100 ₽</span>
+                        <a href="#" class="product__btn">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="similar-products__item">
+                  <div class="product__card">
+                    <a href="#">
+                      <img src="img/catalog/prodict4.jpg" alt="">
+                    </a>
+  
+                    <div class="product__card-wrap">
+                      <span class="item-number">Артикул: 12345</span>
+                      <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
+  
+                      <div class="product__price-box">
+                        <span>7 100 ₽</span>
+                        <a href="#" class="product__btn">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="similar-products__item">
+                  <div class="product__card">
+                    <a href="#">
+                      <img src="img/catalog/prodict1.jpg" alt="">
+                    </a>
+  
+                    <div class="product__card-wrap">
+                      <span class="item-number">Артикул: 12345</span>
+                      <a class="product__name" href="#">Металлочерепица модульная квинта Uno Grand Line</a>
+  
+                      <div class="product__price-box">
+                        <span>7 100 ₽</span>
+                        <a href="#" class="product__btn">Заказать</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      
+
+      <footer>
+        <div class="footer_line-up">
+          <?xml version="1.0" encoding="utf-8"?>
+          <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+          <svg
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            x="0px"
+            y="0px"
+            viewBox="0 0 1826.3 91.7"
+            style="enable-background: new 0 0 1826.3 91.7"
+            xml:space="preserve"
+          >
+            <style type="text/css">
+              .st0 {
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                fill: #f6f9fc;
+              }
+            </style>
+            <g>
+              <path
+                class="st0"
+                d="M1826.3,91.7V0H1625c-37.8-0.6-35.2,27.4-60.3,27.4c-434.4,0-868.8,0-1303.3,0C236.4,27.4,239-0.6,201.3,0H0
+            v91.7C608.8,91.7,1217.5,91.7,1826.3,91.7L1826.3,91.7z"
+              />
+            </g>
+          </svg>
+        </div>
+
+        <div class="box-container">
+          <div class="footer__wrap">
+            <div class="footer__logo">
+              <img src="img/icons/logo-white.svg" alt="" />
+              <p>Производство и продажа кровельных материалов в Крыму</p>
+            </div>
+
+            <ul class="footer__item">
+              <li class="font_bold">КАТАЛОГ</li>
+              <li><a href="#">Металлочерепица</a></li>
+              <li><a href="#">Профнастил</a></li>
+              <li><a href="#">Фальцевая кровля</a></li>
+              <li><a href="#">Композитная черепица</a></li>
+              <li><a href="#">Гибкая черепица</a></li>
+              <li><a href="#">Рулонные кровельные материалы</a></li>
+              <li><a href="#">Натуральная черепица</a></li>
+            </ul>
+
+            <ul class="footer__item font_bold">
+              <li><a href="#">О КОМПАНИИ</a></li>
+              <li><a href="#">СТАТЬИ И НОВОСТИ</a></li>
+              <li><a href="#">ПОРТФОЛИО</a></li>
+            </ul>
+
+            <ul class="footer__item footer__item_contacts">
+              <li class="font_bold">КОНТАКТЫ</li>
+              <li>
+                <p class="font_sb">Адрес:</p>
+                АР Крым, Симферополь <br />
+                ул. Генерала Васильева, 30 з
+              </li>
+              <li>
+                <p class="font_sb">Телефон:</p>
+                <a href="#">+7 (978) 702-70-20</a>
+              </li>
+              <li>
+                <p class="font_sb">E-mail:</p>
+                <a href="#">roof-zavod@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <div class="box-container">
+            <ul>
+              <li><a href="#">Политика конфиденциальности</a></li>
+              <li><p>г. Симферополь © Copyright 2021 г.</p></li>
+              <li>
+                <a class="made-in" href="#">
+                  <p>Сделано в</p>
+                  <img src="img/icons/logo-sheer.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <div id="scroller" class="to-up">
+      <i class="fas fa-chevron-up"></i>
+    </div>
+
+    <script src="libs/jquery-3.5.1/dist/jquery.min.js"></script>
+    <script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
+    <script src="libs/maskedinput/jquery.maskedinput.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

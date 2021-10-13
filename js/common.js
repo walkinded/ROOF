@@ -134,6 +134,22 @@ $(document).ready(function($) {
   });
 });
 
+$(document).ready(function($) {
+  $('.product-card__info-tab_content').hide();
+  $('.product-card__info-tab_content:first').show();
+  $('.tabs li:first').addClass('active');
+  $('.tabs li').click(function(event) {
+    event.preventDefault();
+    $('.tabs li').removeClass('active');
+    $(this).addClass('active');
+    $('.product-card__info-tab_content').hide();
+
+    var selectTab = $(this).find('a').attr("href");
+
+    $(selectTab).fadeIn();
+  });
+});
+
 
 $('.select-material__wrap .select-material__btn:first').addClass('main-calc_bg-active');
 $('.select-material__wrap .select-material__btn').click(function() {
@@ -276,6 +292,79 @@ $('.about-company__slider').slick({
 
 $('.about-company__reviews-slider').slick({
   slidesToShow: 2,
+  arrows: true,
+  pagination: false,
+  // variableWidth: true,
+  prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+  nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+  ]
+});
+
+
+$('.product-card__small-slider').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 3,
+  arrows: true,
+  focusOnSelect: true,
+  // centerMode: true,
+  prevArrow: '<div class="slick-prev slick-arrow"><i class="fas fa-chevron-left"></i><div/>',
+  nextArrow: '<div class="slick-next slick-arrow"><i class="fas fa-chevron-right"></i><div/>',
+  asNavFor: ".product-card__big-slider",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        arrows: false,
+      }
+    }
+  ]
+});
+
+$('.product-card__big-slider').slick({
+  lazyLoad: 'ondemand',
+  slidesToShow: 1,
+  arrows: false,
+  pagination: true,
+  asNavFor: ".product-card__small-slider",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+  ]
+});
+
+$('.similar-products__slider').slick({
+  slidesToShow: 4,
   arrows: true,
   pagination: false,
   // variableWidth: true,
