@@ -684,6 +684,9 @@
     grid-template-columns: 1fr;
     justify-items: center;
   }
+  .similar-products__slider .slick-track {
+    gap: 0;
+  }
 }
 
 @media screen and (max-width: 375px) {

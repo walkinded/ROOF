@@ -2013,7 +2013,7 @@ input[type="checkbox"]::before {
 
 /* ==================== MAP ==================== */
 .map-links {
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   height: auto;
   padding: 20px;
@@ -2035,6 +2035,10 @@ input[type="checkbox"]::before {
   font-size: 20px;
   margin-bottom: 20px;
   list-style: inside decimal;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid rgb(189, 189, 189);
 }
 .map-links span {
   font-size: 10px;
@@ -3056,4 +3060,26 @@ input[type="checkbox"]::before {
   max-width: 300px;
   line-height: 25px;
   margin-bottom: 30px;
+}
+
+
+
+/* ==================== price-list ==================== */
+.price-list {
+  padding-bottom: 100px;
+}
+.attention-section {
+  margin-top: 80px;
+}
+.attention-text {
+  max-width: 730px;
+  font-size: 30px;
+  font-weight: var(--font-Bold);
+}
+.attention-text span {
+  color: var(--main-red-color);
+}
+.attention-section__wrap {
+  display: flex;
+  gap: 60px;
 }
