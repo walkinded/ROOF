@@ -299,8 +299,6 @@
   .green-btn_header {
     display: none;
   }
-
-
   .main-section {
     height: max-content;
   }
@@ -346,6 +344,14 @@
   }
   #tab1.product-card__info-tab_content {
     flex-direction: column;
+  }
+  .question-answer__wrap {
+    flex-direction: column;
+  }
+  .callback-question {
+    max-width: 100%;
+    width: auto;
+    height: auto;
   }
 }
 

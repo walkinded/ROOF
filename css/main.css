@@ -2403,6 +2403,7 @@ input[type="checkbox"]::before {
 .item__accordion_vacancy {
   max-width: 100%;
   width: auto;
+  display: block !important;
 }
 .item__accordion_vacancy .accordion__wrap {
   max-width: 100%;
@@ -3000,7 +3001,7 @@ input[type="checkbox"]::before {
 }
 .question-answer__wrap {
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: space-between;
 }
 .question-answer__item {
@@ -3043,6 +3044,7 @@ input[type="checkbox"]::before {
 .callback-question__title {
   position: relative;
   top: -30px;
+  text-align: center;
   font-size: 24px;
   font-weight: var(--font-Semi-bold);
 }
