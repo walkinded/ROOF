@@ -374,17 +374,25 @@ $('.similar-products__slider').slick({
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 1,
-        arrows: false,
-        dots: true
+        slidesToShow: 3,
+        arrows: true,
+        dots: false
       }
     },
     {
       breakpoint: 768,
       settings: {
+        slidesToShow: 2,
+        arrows: true,
+        dots: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
         slidesToShow: 1,
-        arrows: false,
-        dots: true
+        arrows: true,
+        dots: false
       }
     },
   ]
