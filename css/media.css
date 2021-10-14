@@ -687,6 +687,9 @@
   .similar-products__slider .slick-track {
     gap: 0;
   }
+  .map-links li {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 375px) {

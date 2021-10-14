@@ -2014,7 +2014,7 @@ input[type="checkbox"]::before {
 /* ==================== MAP ==================== */
 .map-links {
   max-width: 400px;
-  width: 100%;
+  width: auto;
   height: auto;
   padding: 20px;
   border: 1px solid #000;
@@ -2070,7 +2070,6 @@ input[type="checkbox"]::before {
   max-width: 957px;
   width: 100%;
 }
-
 /* .about-company__tab_content {} */
 .a-c__tabs {
   min-width: 372px;
@@ -2140,7 +2139,6 @@ input[type="checkbox"]::before {
   column-gap: 40px;
   margin-bottom: 45px;
 }
-
 .grid-specifications__cards .card {
   padding: 20px 40px;
 }
@@ -3082,4 +3080,7 @@ input[type="checkbox"]::before {
 .attention-section__wrap {
   display: flex;
   gap: 60px;
+}
+.attention-section__docs {
+  max-width: 878px;
 }
