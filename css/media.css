@@ -117,11 +117,17 @@
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
-  .contacts__map {
-    order: 3;
-    grid-column: auto / span 2;
-
+  .main-contact__wrap-item {
+    order: 1;
     max-width: 100%;
+  }
+  .contacts__map {
+    order: 2;
+    max-width: 100%;
+  }
+  .main-contact__wrap .forma {
+    order: 3;
+    grid-column: 1 / -1;
   }
   .header-nav-union svg {
     top: 0px;
@@ -367,9 +373,6 @@
     bottom: 10px;
     left: 10px;
   }
-  .main-contact {
-    padding: 50px 0;
-  }
   .catalog__item,
   .catalog__item-product {
     display: grid;
@@ -462,6 +465,9 @@
   }
   .footer__wrap .catalog__nav_mobile {
     display: flex;
+  }
+  .main-contact .title {
+    margin-bottom: 20px;
   }
 }
 

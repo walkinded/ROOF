@@ -178,32 +178,116 @@
         </div>
       </div>
 
+      <section class="breadcrumb">
+        <div class="box-container">
+            <ol itemscope itemtype="#">
+                <li itemprop="itemListElement" itemscope
+                    itemtype="#">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name" class="breadcrumb_font_style">Главная</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                    <span class="span_m_l_20 breadcrumb_font_style"><i class="fas fa-angle-right"></i></span>
+                </li>
+                <li>
+                    <span class="breadcrumb_font_style">Контакты</span>
+                </li>
+            </ol>
+        </div>
+      </section>
+
       <section class="main-contact">
         <div class="box-container">
+          <h1 class="title">Контакты</h1>
           <div class="main-contact__wrap">
+
             <div class="main-contact__wrap-item">
-              <h1 class="wrap-item__title">Контакты</h1>
-              <ul class="wrap-item__list">
-                <li>
-                  <p class="font_sb">Адрес:</p>
-                  <p>АР Крым, Симферополь <br>
-                    ул. Генерала Васильева, 30 з
-                    </p>
-                </li>
-                <li>
-                  <p class="font_sb">Телефон: </p>
-                  <a href="#">+7 (978) 702-70-20</a> <br>
-                  <a href="#">+7 (978) 702-70-20</a>
-                </li>
-                <li>
-                  <p class="font_sb">E-mail: </p>
-                  <a href="#">roof-zavod@gmail.com</a>
-                </li>
-                <li>
-                  <a class="btn-requisites" href="#">Реквизиты</a>
-                </li>
-              </ul>
+              <div class="item__accordion item__accordion_vacancy" id="accordion">
+                
+                <div class="accordion__wrap card card_green-border" >
+                  <div class="accordion__head" id="setSimferopol">
+                    <p>г. Симферополь</p>
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                  <div class="accordion__body">
+                    <ul class="wrap-item__list">
+                      <li>
+                        <p class="font_sb">Адрес:</p>
+                        <p>ул. Генерала Васильева, 30 з</p>
+                      </li>
+                      <li>
+                        <p class="font_sb">Телефон: </p>
+                        <a href="#">+7 (978) 702-70-20</a> <br>
+                        <a href="#">+7 (978) 702-70-20</a>
+                      </li>
+                      <li>
+                        <p class="font_sb">E-mail: </p>
+                        <a href="#">roof-zavod@gmail.com</a>
+                      </li>
+                      <li>
+                        <a class="btn-requisites" href="#">Реквизиты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion__wrap card card_green-border" >
+                  <div class="accordion__head" id="setSevastopol">
+                    <p>г. Севастополь</p>
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                  <div class="accordion__body">
+                    <ul class="wrap-item__list">
+                      <li>
+                        <p class="font_sb">Адрес:</p>
+                        <p>ул. Генерала Васильева, 30 з</p>
+                      </li>
+                      <li>
+                        <p class="font_sb">Телефон: </p>
+                        <a href="#">+7 (978) 702-70-20</a> <br>
+                        <a href="#">+7 (978) 702-70-20</a>
+                      </li>
+                      <li>
+                        <p class="font_sb">E-mail: </p>
+                        <a href="#">roof-zavod@gmail.com</a>
+                      </li>
+                      <li>
+                        <a class="btn-requisites" href="#">Реквизиты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="accordion__wrap card card_green-border" >
+                  <div class="accordion__head" id="setFeodosoya">
+                    <p>г. Феодосия</p>
+                    <i class="far fa-times-circle"></i>
+                  </div>
+                  <div class="accordion__body">
+                    <ul class="wrap-item__list">
+                      <li>
+                        <p class="font_sb">Адрес:</p>
+                        <p>ул. Генерала Васильева, 30 з</p>
+                      </li>
+                      <li>
+                        <p class="font_sb">Телефон: </p>
+                        <a href="#">+7 (978) 702-70-20</a> <br>
+                        <a href="#">+7 (978) 702-70-20</a>
+                      </li>
+                      <li>
+                        <p class="font_sb">E-mail: </p>
+                        <a href="#">roof-zavod@gmail.com</a>
+                      </li>
+                      <li>
+                        <a class="btn-requisites" href="#">Реквизиты</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
+              </div>
             </div>
+
             <div class="contacts__map" id="contacts__map"></div>
 
             <div class="forma" id="">
@@ -411,56 +495,6 @@
     <script src="libs/maskedinput/jquery.maskedinput.js"></script>
     <script src="js/common.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript" unselectable="on" scroll="false"></script>
-
-    <script>
-      (function($)
-      {
-        createMap('contacts__map', [44.940386, 34.075193]);
-  
-        function createMap(xID, coords)
-        {
-          if ($("#" + xID + "").length > 0)
-          {
-            var myMap;
-            // Дождёмся загрузки API и готовности DOM.
-            ymaps.ready(init);
-  
-            function init()
-            {
-              myMap = new ymaps.Map(xID,
-              {
-                center: coords,
-                zoom: 18,
-                controls: []
-              },
-              {
-                searchControlProvider: 'yandex#search'
-              });
-              // Создаём макет содержимого.
-              MyIconContentLayout = ymaps.templateLayoutFactory.createClass('<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'),
-                myPlacemark = new ymaps.Placemark(myMap.getCenter(),
-                {
-                  hintContent: 'г. Симферополь <br> ул. Генерала Васильева, 30 з',
-                  balloonContent: 'г. Симферополь <br> ул. Генерала Васильева, 30 з'
-                },
-                {
-                  // Опции.
-                  // Необходимо указать данный тип макета.
-                  iconLayout: 'default#image',
-                  // Своё изображение иконки метки.
-                  iconImageHref: 'img/icons/placeholder.svg',
-                  // Размеры метки.
-                  iconImageSize: [30, 30],
-                  // Смещение левого верхнего угла иконки относительно
-                  // её "ножки" (точки привязки).
-                  iconImageOffset: [-15, -25]
-                });
-              myMap.geoObjects.add(myPlacemark);
-              myMap.behaviors.disable('scrollZoom');
-            }
-          }
-        }
-      })(jQuery);
-    </script>
+    <script src="js/map.js"></script>
   </body>
 </html>

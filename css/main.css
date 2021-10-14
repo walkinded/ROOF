@@ -1264,14 +1264,23 @@ input[type="checkbox"]::before {
 
 /* ========== MAIN-CONTACT ========== */
 .main-contact {
-  padding: 100px 0px 120px;
+  padding: 0px 0px 120px;
 }
 .main-contact__wrap {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
+.main-contact .title {
+  text-align: left;
+  margin-bottom: 50px;
+}
 .main-contact__wrap-item {
+  max-width: 274px;
+  width: 100%;
+}
+.main-contact__wrap-item .accordion__body {
+  padding: 20px 0 0;
 }
 .wrap-item__title {
   font-size: 36px;
@@ -1279,10 +1288,10 @@ input[type="checkbox"]::before {
   margin-bottom: 56px;
 }
 .wrap-item__list {
-  font-size: 16px;
+  font-size: 14px;
 }
 .wrap-item__list li {
-  margin-bottom: 55px;
+  margin-bottom: 25px;
 }
 .wrap-item__list li:last-child {
   margin-bottom: 0px;
