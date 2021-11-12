@@ -18,6 +18,46 @@
     width: 1000px;
     object-fit: contain;
   }
+  .house-map {
+    max-width: 1000px;
+  }
+  .house-map__box-1 {
+    top: 325px;
+    left: 240px;
+  }
+  .house-map__box-2 {
+    top: 370px;
+    left: 300px;
+  }
+  .house-map__box-3 {
+    top: 150px;
+    left: 610px;
+  }
+  .house-map__box-4 {
+    top: 210px;
+    left: 630px;
+  }
+  .house-map__box-5 {
+    top: 270px;
+    left: 650px;
+  }
+  .house-map__box-6 {
+    top: 380px;
+    left: 728px;
+  }
+  .house-map__box-7 {
+    top: 420px;
+    left: 880px;
+  }
+  .house-map__box-3 .house-map__info {
+    transform: translateY(0%);
+  }
+  .house-map__box-6 .house-map__info {
+    transform: translateX(-50%);
+  }
+  .house-map__box-7 .house-map__info {
+    transform: translateX(-70%);
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -152,11 +192,60 @@
   .roof-img-section {
     right: -20px;
   }
-  .main-section__house-img {
-    width: 700px;
-    top: 320px;
-    object-fit: contain;
+  .main-section {
+    height: auto;
   }
+  .house-map {
+    max-width: 700px;
+    top: 450px;
+    height: 277px;
+  }
+  .main-section__house-img {
+    /* position: initial; */
+    width: 700px;
+    /* top: 320px; */
+    object-fit: contain;
+    height: auto;
+  }
+  .house-map__box-1 {
+    top: 150px;
+    left: 160px;
+  }
+  .house-map__box-2 {
+    top: 170px;
+    left: 200px;
+  }
+  .house-map__box-3 {
+    top: 30px;
+    left: 420px;
+  }
+  .house-map__box-4 {
+    top: 70px;
+    left: 430px;
+  }
+  .house-map__box-5 {
+    top: 110px;
+    left: 450px;
+  }
+  .house-map__box-6 {
+    top: 180px;
+    left: 500px;
+  }
+  .house-map__box-7 {
+    top: 210px;
+    left: 610px;
+  }
+  .house-map__box-1 .house-map__info,
+  .house-map__box-2 .house-map__info,
+  .house-map__box-3 .house-map__info,
+  .house-map__box-4 .house-map__info,
+  .house-map__box-5 .house-map__info {
+    transform: translateX(-50%);
+  }
+  .house-map__box-7 .house-map__info {
+    transform: translateX(-100%);
+  }
+
   .gallery-img__slider-big {
     max-width: 350px;
   }
@@ -314,7 +403,7 @@
     max-height: 200px;
   }
   .main-section__house-img {
-    display: none;
+    /* display: none; */
   }
   .main-news__items {
     grid-template-columns: repeat(2, 1fr);
@@ -329,6 +418,9 @@
     max-width: 100%;
     width: auto;
     height: auto;
+  }
+  .house-map {
+    display: none;
   }
 }
 

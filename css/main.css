@@ -564,15 +564,141 @@ footer a {
   z-index: 1;
   overflow: hidden;
 }
+
+
+.house-map {
+  position: absolute;
+  top: 235px;
+  max-width: 1540px;
+  width: 100%;
+  height: 610px;
+  right: -25px;
+}
 .main-section__house-img {
   position: absolute;
-  /* top: 235px; */
   width: auto;
   right: 0;
-  /* left: 0; */
   z-index: -1;
   height: 610px;
 }
+.circle-point {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.circle-point::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--white-color);
+  box-shadow: 0 0 5px 5px rgba(134, 7, 20, 1);
+  cursor: pointer;
+  transition: all .3s;
+  /* z-index: 1; */
+}
+.circle-point:hover::before {
+  box-shadow: 0 0 5px 5px rgba(134, 7, 20, .6);
+}
+.house-map__box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-100%);
+}
+.house-map__box-1 {
+  top: 335px;
+  left: 370px;
+}
+.house-map__box-2 {
+  top: 400px;
+  left: 460px;
+}
+.house-map__box-3 {
+  top: 50px;
+  left: 950px;
+}
+.house-map__box-4 {
+  top: 150px;
+  left: 980px;
+}
+.house-map__box-5 {
+  top: 250px;
+  left: 1000px;
+}
+.house-map__box-6 {
+  top: 400px;
+  left: 1125px;
+}
+.house-map__box-7 {
+  top: 460px;
+  left: 1360px;
+}
+.house-map__box-7 .house-map__info {
+  transform: translateX(-50%);
+}
+.house-map__box-3 .house-map__info {
+  transform: translateY(59%) translateX(5%);;
+  margin-bottom: 0px;
+  margin-left: 9px;
+}
+
+.house-map__info {
+  opacity: 0;
+  width: 0;
+  /* width: 100%; */
+  /* padding: 21px 23px; */
+  height: 0;
+  border-radius: 8px;
+  background: var(--white-color);
+  margin-bottom: 9px;
+  margin-left: 9px;
+  transition: all .5s;
+  position: relative;
+}
+.info__icon-close {
+  position: absolute;
+  right: 7px;
+  top: 7px;
+  color: #000;
+  font-size: 20px;
+  cursor: pointer;
+}
+.house-map__info_title {
+  font-size: 14px;
+  font-weight: var(--font-Semi-bold);
+  margin-bottom: 10px;
+}
+.house-map__info_desc {
+  font-size: 11px;
+  font-weight: var(--font-Regular);
+  margin-bottom: 15px;
+  max-width: 209px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  height: 59px;
+}
+.house-map__info .product__btn {
+  height: 30px;
+}
+.house-map__info.show {
+  opacity: 1;
+  position: relative;
+  z-index: 10;
+  width: calc(276px - 46px);
+  height: calc(170px - 42px);
+  padding: 21px 23px;
+}
+
+
 .main-section__wrap {
   /* position: relative; */
   padding-top: 235px;

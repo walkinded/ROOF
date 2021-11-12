@@ -218,6 +218,15 @@ $('.form-control').on('focus',function(){
 //   e.stopPropagation();
 // });
 
+/* ==================== HOUSE MAP ==================== */
+$('.circle-point').on('click', function(){
+  $('.house-map__info').removeClass('show');
+  $(this).siblings('.house-map__info').toggleClass('show');
+});
+$('.info__icon-close').on('click', function(){
+  $('.house-map__info').removeClass('show');
+});
+
 /* ==================== SLIDER ==================== */
 
 $('.gallery-img__slider-small').slick({
